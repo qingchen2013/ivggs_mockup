@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <!--
       jQuery-menu-aim: this example uses Twitter's Bootstrap
@@ -16,14 +16,17 @@
     <meta name="author" content="sss">
 
     <link href="css/main.css" rel="stylesheet" type="text/css"> 
-
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <style>
       body {
         padding-top: 2px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
 
-
+      ul li, ol ul li {
+      list-style: none;
+      }
       .portlet-head {
       /*background: url(../img/meta/portlet/ttl_bg.gif) 0 50% repeat-x;
       */
@@ -120,6 +123,7 @@
           margin-right: 10px;
           padding-left: 10px;
           padding-right: 10px;
+
         }
 
         .search-pages {
@@ -136,6 +140,7 @@
           float: right;
           width: 270px;
           height: 28px;
+          border-width: 0px medium;
 
         }
         .page-link{
@@ -162,6 +167,8 @@
           float: right;
         }
 
+
+
         #nav-bar-inner .nav_a, #navbar.nav-beacon #nav-bar-inner .nav_a:link, #navbar.nav-beacon #nav-bar-inner .nav_a:visited {
         text-decoration: none;
         color: black;
@@ -182,6 +189,96 @@
         }
 
 
+        .navbar .popover {
+            width: 400px;
+            -webkit-border-top-left-radius: 0px;
+            -webkit-border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            overflow: hidden;
+        }
+
+        .navbar .popover-content {
+            text-align: center;
+        }
+
+        .navbar .popover-content img {
+            height: 212px;
+            max-width: 250px;
+        }
+
+        .navbar .dropdown-menu {
+            -webkit-border-top-right-radius: 0px;
+            -webkit-border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .navbar .dropdown-menu > li > a:hover {
+            background-image: none;
+            color: white;
+            background-color: rgb(0, 129, 194);
+            background-color: rgba(0, 129, 194, 0.5);
+        }
+
+        .navbar .dropdown-menu > li > a.maintainHover {
+            color: white;
+            background-color: #0081C2;
+        }
+        .submenu-li{
+          list-style: none;
+        }
+
+        .popover-title {
+            background-color: #F7F7F7;
+            border-bottom: 1px solid #EBEBEB;
+            border-radius: 5px 5px 0 0;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 10px;
+            margin: 0;
+            padding: 8px 14px;
+        }
+
+        .popover {
+              background-clip: padding-box;
+              background-color: #FFFFFF;
+              border: 1px solid rgba(0, 0, 0, 0.2);
+              border-radius: 6px 6px 6px 6px;
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+              display: none;
+              left: 0;
+              padding: 1px;
+              /*
+              position: absolute;
+              */
+              text-align: left;
+              top: 0;
+              white-space: normal;
+              z-index: 1010;
+              width: 120px;
+              height: 220px ! important;
+          }
+
+        .popover-title {
+            padding: 8px 14px;
+            margin: 0;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 18px;
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #ebebeb;
+            border-radius: 6px 6px 6px 6px;
+            -webkit-border-radius: 5px 5px 0 0;
+               -moz-border-radius: 5px 5px 0 0;
+                    border-radius: 5px 5px 0 0;
+            display:inline-block; 
+        }
 
     </style>
     <!--[if lt IE 9]>
@@ -198,80 +295,151 @@
 
               <form class="height">
 
-                     <div class="lfr-portlet-column" id="layout-column_column-1">	
-                            <div id="p_p_id_19_" class="portlet-boundary portlet-boundary_19_  portlet-message-boards" >	
+                    <div class="lfr-portlet-column" id="layout-column_column-1">	
+                      <div id="p_p_id_19_" class="portlet-boundary portlet-boundary_19_  portlet-message-boards" >	
                             <a id="p_19"></a>
-                            <div class="portlet" id="portlet-wrapper-19">	
-                            <div class="portlet-topper">
+                        <div class="portlet" id="portlet-wrapper-19">	
+                          <div class="portlet-topper">
                                    <span class="portlet-title">
                                           <span><img class="icon" src="img/spacer.png"  alt="掲示板" title="掲示板" style="background-image: url('/html/icons/.sprite.png'); background-position: 50% -192px; background-repeat: no-repeat; height: 16px; width: 16px;" />
-                                          </span>出勤一览
+                                          </span>勤怠一覧
                                    </span>
 
-                            </div>
+                          </div>
 
                             <div class="portlet-head">
                               <div class="portlet-menu">
-                                    <a id="nav-shop-all-button" 
-                                      href="/gp/site-directory/ref=topnav_sad" 
-                                      class="nav_a nav-button-outer nav-menu-active" 
-                                      alt="所有菜单">
-          <span class="nav-button-mid nav-sprite">
-            <span class="nav-button-inner nav-sprite">
-              <span class="nav-button-title nav-button-line1">浏览</span>
-              <span class="nav-button-title nav-button-line2">全部菜单</span>
-            </span>
-          </span>
-          <span class="nav-down-arrow nav-sprite"></span>
-        </a>
-                              </div>
+                                <div class="nav-collapse collapse">
+                                    <ul class="nav">
+                                      <li class="active">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">浏览菜单</a>
+                                        <!--
+                                          jQuery-menu-aim: this <ul> defines the dropdown main menu and its contents.
+                                          This is just one of many possible examples for defining the menu's HTML.
+                                          jQuery-menu-aim is agnostic to your HTML structure, it only fires events to
+                                          be used as you please.
+                                        -->
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li class="submenu-li" data-submenu-id="mst_data">
+                                                <a href="#">主数据</a>
+                                                <!--
+                                                  jQuery-menu-aim: each class="popover" div defines submenu content. There are a million
+                                                  and one ways to do this, places to structure the HTML, etc. This is just one example.
+                                                  jQuery-menu-aim is agnostic to your HTML structure, it only fires events to be used
+                                                  as you please.
+                                                -->
+                                              
+                                                <div id="mst_data" class="popover">
+                                                      <h3 class="popover-title" onclick="alert()">国定假日</h3>
+                                                      <h3 class="popover-title">IV特别假日</h3>
+                                                      <h3 class="popover-title">其他特殊假日</h3>  
+                                                </div>
+
+                                            </li>
+
+                                            <li class="submenu-li" data-submenu-id="submenu-sp-hol">
+                                                <a href="#">休假</a>
+                                                <div id="submenu-sp-hol" class="popover">
+                                                    <h3 class="popover-title">查询休假</h3>
+                                                    <h3 class="popover-title">填写休假</h3>
+                                                    <h3 class="popover-title">审核休假</h3>
+                                                    
+                                                    
+                                                </div>
+                                            </li>
+                                            <li class="submenu-li" data-submenu-id="submenu-duoc-langur">
+                                                <a href="#">正常工时</a>
+                                                <div id="submenu-duoc-langur" class="popover">
+                                                    <h3 class="popover-title">查询工时</h3>
+                                                      <h3 class="popover-title">填写工时</h3>
+                                                      <h3 class="popover-title">修改工时</h3> 
+                                                    <h3 class="popover-title">审核工时</h3>
+                                                    <div class="popover-content"><img src="img/duoc-langur.png"></div>
+                                                </div>
+                                            </li>
+                                            <li class="submenu-li" data-submenu-id="submenu-pygmy">
+                                                <a href="#">加班申请</a>
+                                                <div id="submenu-pygmy" class="popover">
+                                                    <h3 class="popover-title">Baby Pygmy Marmoset</h3>
+                                                    <div class="popover-content"><img src="img/pygmy.png"></div>
+                                                </div>
+                                            </li>
+                                            <li class="submenu-li" data-submenu-id="submenu-tamarin">
+                                                <a href="#">休假申请</a>
+                                                <div id="submenu-tamarin" class="popover">
+                                                    <h3 class="popover-title">Black Lion Tamarin</h3>
+                                                    <div class="popover-content"><img src="img/tamarin.png"></div>
+                                                </div>
+                                            </li>
+                                            <li class="submenu-li" data-submenu-id="submenu-monk">
+                                                <a href="#">勤怠承认</a>
+                                                <div id="submenu-monk" class="popover">
+                                                    <h3 class="popover-title">Monk Saki</h3>
+                                                    <div class="popover-content"><img src="img/monk.png"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </div>
+                              </div>     
                               <div class="portlet-time">
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="160" height="70" id="honehoneclock" align="middle"><param name="allowScriptAccess" value="always"><param name="movie" value="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff"><param name="wmode" value="transparent"><embed wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf" quality="high" bgcolor="#ffffff" width="160" height="70" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></object>
-                                                       
+                                      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="160" height="70" id="honehoneclock" align="middle"><param name="allowScriptAccess" value="always"><param name="movie" value="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff"><param name="wmode" value="transparent"><embed wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf" quality="high" bgcolor="#ffffff" width="160" height="70" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+                                      </object>                      
                               </div>
                             </div>
-<div class="portlet-user">
-  <table class="portlet-user-info">
-   
-      <tr class="results-header">
+                                    <div class="portlet-user">
+                                      <table class="portlet-user-info">
+                                       
+                                          <tr class="results-header">
+                                              <td>员工ID：</td>
+                                              <td>99999</td>
+                                              <td>员工姓名：</td>
+                                              <td>XXXX</td>
+                                              <td>部门：</td>
+                                              <td>统括部</td>
+                                          </tr>
+                                      </table>
+                                    </div>
 
-                                                               <td>员工ID：</td>
-                                                               <td>99999</td>
-                                                               <td>员工姓名：</td>
-                                                               <td>XXXX</td>
-                                                               <td>部门：</td>
-                                                               <td>统括部</td>
-                                                        </tr>
-  </table>
-
-</div>
-
-
+                            <div class="portlet-search">
+                            </div>
 
                             <div class="portlet-content">
                                    <div class="portlet-content-container" style="">
-                                          <br />	  
-                                          <div class="">
-                                                    <div class="page-selector">
-                                                              <div class="delta-selector">    
-                                                               跳转
-                                                                <select class="select" onchange="">  
-                                                                  <option selected="selected" value="1">1</option>  
-                                                                  <option value="2">2</option>  <option value="3">3</option>  
-                                                                  <option value="4">4</option>  
-                                                                </select>/20
-                                                              </div>
-                                                              <div class="page-link">
-                                                                    <tr >
-                                                                       <td>第一页</td>
-                                                                       <td>前一页</td>
-                                                                       <td>后一页</td>
-                                                                       <td>最后一页</td>
-                                                                    </tr>
-                                                              </div>
-                                                       
-                                                 </div>
+                                                    <div class="page-date">	  
+                                                      <table border="0" cellspacing="0" cellpadding="2">
+                                                        <tbody>
+                                                          <tr valign="middle"><td>
+                                                          <a href="javascript:void(0);" onclick="" title="前の週へ">
+                                                          <img src="img/schedule/arrow_left_w.gif" border="0" alt="前の週へ"></a>&nbsp;
+                                                          </td><td>
+                                                          <a href="javascript:void(0);" onclick="" title="前の日へ">
+                                                          <img src="img/schedule/arrow_left.gif" border="0" alt="前の日へ"></a>&nbsp;
+                                                          </td><td nowrap="nowrap"><span style="font-weight:bold">
+                                                          2013 年 9 月 17 日 (火)
+                                                          </span></td><td>
+                                                          <a href="javascript:void(0);" onclick="" title="次の日へ">
+                                                          <img src="img/schedule/arrow_right.gif" border="0" alt="次の日へ"></a>&nbsp;
+                                                          </td><td>
+                                                          <a href="javascript:void(0);" onclick="" title="次の週へ">
+                                                          <img src="img/schedule/arrow_right_w.gif" border="0" alt="次の週へ"></a>&nbsp;
+                                                          </td><td>
+                                                          <a href="javascript:void(0);" onclick="" title="今日へ">
+                                                          <img src="img/schedule/schedule_today.gif" border="0" alt="今日へ"></a>&nbsp;
+                                                          </td><td>
+                                                          <a href="javascript:void(0);" onclick="" title="前月へ">
+                                                          <img src="img/schedule/schedule_prevmonth.gif" border="0" alt="前月へ"></a>&nbsp;
+                                                          </td><td>
+                                                          <a href="javascript:void(0);" onclick="" title="翌月へ">
+                                                          <img src="img/schedule/schedule_nextmonth.gif" border="0" alt="翌月へ"></a>&nbsp;
+                                                          </td></tr>
+                                                        </tbody>
+                                                      </table>  
+                                                    </div>
+                                                    
                                           </div>
+                                          
                                           <div class="results-grid"	>	
                                                  <table class="taglib-search-iterator"> 
                                                     <tr class="portlet-section-header results-header">  
@@ -368,40 +536,40 @@
                                                                     <input type="checkbox" name="checkbox1" value="checkbox">
                                                                </td>
 
-                                                               <td align="left" class="col-2" colspan="1" valign="middle">  
+                                                               <td align="middle" class="col-2" colspan="1" valign="middle">  
                                                                       9/2 
                                                                </td>
-                                                               <td align="left" class="col-3" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-3" colspan="1" valign="middle">
                                                                       一
                                                                </td>
-                                                               <td align="left" class="col-4" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       出勤日  
                                                                </td>
-                                                               <td align="left" class="col-5" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
                                                                       9：00
                                                                </td>
-                                                               <td align="left" class="col-6" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
                                                                       18：30
                                                                </td>
-                                                               <td align="left" class="col-7" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
                                                                       9.5
                                                                </td>
-                                                               <td align="left" class="col-8" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
                                                                       8
                                                                </td>
-                                                               <td align="left" class="col-9" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
                                                                       1.5
                                                                </td>
-                                                               <td align="left" class="col-10" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
                                                                       0
                                                                </td>
-                                                               <td align="left" class="col-11" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
                                                                       0.5
                                                                </td>
-                                                               <td align="left" class="col-12" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
                                                                       0
                                                                </td>
-                                                               <td align="left" class="col-13" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
                                                                       0
                                                                </td>
                                                                <td align="right" class="col-14" colspan="1" valign="middle">
@@ -414,10 +582,12 @@
 
 
                                                  </table>
-                                                 <div>
-                                                   tianjia
-                                                 </div>
-
+                                                 <table class="taglib-search-iterator"> 
+                                                    <tr class="portlet-section-header results-header">  
+                                                               <th nowrap class="col-1 "  > 提交</th>
+                                                               <th nowrap class="col-2 "  > 撤回</th>
+                                                    </tr>
+                                                 </table>
                                           </div>
                                           <div class="taglib-search-iterator-page-iterator-bottom">	
                                                  <div class="taglib-page-iterator">
@@ -428,8 +598,8 @@
                                    </div>
                             </div>
                      </div>
-              </div>
-</form>
+
+              </form>
        </div>
 </div>
 </body>
@@ -438,18 +608,10 @@
 
 
  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="../jquery.menu-aim.js" type="text/javascript"></script>
+    <script src="js/jquery.menu-aim.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-  
-    function function_name (obj) {
-      // body...
-    }
-
-</script>>
-
-    <script>
+    <script type="text/javascript">
 
         var $menu = $(".dropdown-menu");
 
@@ -506,6 +668,7 @@
             // Simply hide the submenu on any click. Again, this is just a hacked
             // together menu/submenu structure to show the use of jQuery-menu-aim.
             $(".popover").css("display", "none");
+
             $("a.maintainHover").removeClass("maintainHover");
         });
 
