@@ -10,14 +10,14 @@
     -->
 
     <meta charset="utf-8">
-    <title>查询画面</title>
+    <title>勤怠明細查询</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="sss">
     <meta name="author" content="sss">
 
-    <link href="css/main.css" rel="stylesheet" type="text/css"> 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet" type="text/css"> 
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
 
     <style>
       body {
@@ -100,6 +100,9 @@
         .lfr-trigger strong span {
         background: url(img/common/action.png) no-repeat 5px 50%;
         padding: 2px 10px 2px 35px;
+        }
+        .lfr-template{
+          height: 2px;
         }
 
         .user-results-header {
@@ -279,6 +282,25 @@
                     border-radius: 5px 5px 0 0;
             display:inline-block; 
         }
+        .portlet-section-body td col-7{
+          width: 20px;
+        }
+        select, textarea, .textarea {
+          background-image: url(./img/forms/input_shadow.png);
+          background-repeat: no-repeat;
+          border: 1px solid;
+          border-color: #BFBFBF #DEDEDE #DEDEDE #BFBFBF;
+          font: 1em 'Tahoma','Lucida Sans Unicode','Lucida Grande','Lucida',Arial,Verdana,sans-serif;
+          padding: 5px 1px;
+          width: 200px;
+          height: 30px;
+          vertical-align: center;
+          }
+
+         .portlet-section-header th {
+          text-align:center;
+          }
+
 
     </style>
     <!--[if lt IE 9]>
@@ -301,8 +323,8 @@
                         <div class="portlet" id="portlet-wrapper-19">	
                           <div class="portlet-topper">
                                    <span class="portlet-title">
-                                          <span><img class="icon" src="img/spacer.png"  alt="掲示板" title="掲示板" style="background-image: url('/html/icons/.sprite.png'); background-position: 50% -192px; background-repeat: no-repeat; height: 16px; width: 16px;" />
-                                          </span>勤怠一覧
+                                          <span><img class="icon" src="img/spacer.png"  alt="勤怠明細" title="勤怠明細" style="background-image: url('/html/icons/.sprite.png'); background-position: 50% -192px; background-repeat: no-repeat; height: 16px; width: 16px;" />
+                                          </span>勤怠明細
                                    </span>
 
                           </div>
@@ -383,10 +405,6 @@
                                     </ul>
                                   </div>
                               </div>     
-                              <div class="portlet-time">
-                                      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="160" height="70" id="honehoneclock" align="middle"><param name="allowScriptAccess" value="always"><param name="movie" value="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff"><param name="wmode" value="transparent"><embed wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf" quality="high" bgcolor="#ffffff" width="160" height="70" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-                                      </object>                      
-                              </div>
                             </div>
                                     <div class="portlet-user">
                                       <table class="portlet-user-info">
@@ -410,30 +428,45 @@
                                                     <div class="page-date">	  
                                                       <table border="0" cellspacing="0" cellpadding="2">
                                                         <tbody>
-                                                          <tr valign="middle"><td>
-                                                          <a href="javascript:void(0);" onclick="" title="前の週へ">
-                                                          <img src="img/schedule/arrow_left_w.gif" border="0" alt="前の週へ"></a>&nbsp;
-                                                          </td><td>
-                                                          <a href="javascript:void(0);" onclick="" title="前の日へ">
-                                                          <img src="img/schedule/arrow_left.gif" border="0" alt="前の日へ"></a>&nbsp;
-                                                          </td><td nowrap="nowrap"><span style="font-weight:bold">
-                                                          2013 年 9 月 17 日 (火)
-                                                          </span></td><td>
-                                                          <a href="javascript:void(0);" onclick="" title="次の日へ">
-                                                          <img src="img/schedule/arrow_right.gif" border="0" alt="次の日へ"></a>&nbsp;
-                                                          </td><td>
-                                                          <a href="javascript:void(0);" onclick="" title="次の週へ">
-                                                          <img src="img/schedule/arrow_right_w.gif" border="0" alt="次の週へ"></a>&nbsp;
-                                                          </td><td>
-                                                          <a href="javascript:void(0);" onclick="" title="今日へ">
-                                                          <img src="img/schedule/schedule_today.gif" border="0" alt="今日へ"></a>&nbsp;
-                                                          </td><td>
-                                                          <a href="javascript:void(0);" onclick="" title="前月へ">
-                                                          <img src="img/schedule/schedule_prevmonth.gif" border="0" alt="前月へ"></a>&nbsp;
-                                                          </td><td>
-                                                          <a href="javascript:void(0);" onclick="" title="翌月へ">
-                                                          <img src="img/schedule/schedule_nextmonth.gif" border="0" alt="翌月へ"></a>&nbsp;
-                                                          </td></tr>
+                                                          <tr valign="middle">
+                                                              <!--
+                                                              <td>
+                                                              <a href="javascript:void(0);" onclick="" title="前の週へ">
+                                                              <img src="./img/schedule/arrow_left_w.gif" border="0" alt="前の週へ"></a>&nbsp;
+                                                              </td>
+                                                              -->
+                                                              <td>
+                                                              <a href="javascript:void(0);" onclick="" title="前の日へ">
+                                                              <img src="./img/schedule/arrow_left.gif" border="0" alt="前の日へ"></a>&nbsp;
+                                                              </td><td nowrap="nowrap"><span style="font-weight:bold">
+                                                              2013 年 9 月 17 日 (火)
+                                                              </span></td>
+                                                              <td>
+                                                              <a href="javascript:void(0);" onclick="" title="次の日へ">
+                                                              <img src="./img/schedule/arrow_right.gif" border="0" alt="次の日へ"></a>&nbsp;
+                                                              </td>
+                                                              <!--
+                                                              <td>
+                                                              <a href="javascript:void(0);" onclick="" title="次の週へ">
+                                                              <img src="./img/schedule/arrow_right_w.gif" border="0" alt="次の週へ"></a>&nbsp;
+                                                              </td>
+                                                              -->
+                                                              <td>
+                                                              <a href="javascript:void(0);" onclick="" title="今日へ">
+                                                              <img src="./img/schedule/schedule_today.gif" border="0" alt="今日へ"></a>&nbsp;
+                                                              </td>
+                                                              <!--
+                                                              <td>
+                                                              <a href="javascript:void(0);" onclick="" title="前月へ">
+                                                              <img src="./img/schedule/schedule_prevmonth.gif" border="0" alt="前月へ"></a>&nbsp;
+                                                              </td>
+                                                              
+                                                              <td>
+                                                              <a href="javascript:void(0);" onclick="" title="翌月へ">
+                                                              <img src="./img/schedule/schedule_nextmonth.gif" border="0" alt="翌月へ"></a>&nbsp;
+                                                              </td>
+                                                              -->
+                                                         </tr>
                                                         </tbody>
                                                       </table>  
                                                     </div>
@@ -442,27 +475,24 @@
                                           
                                           <div class="results-grid"	>	
                                                  <table class="taglib-search-iterator"> 
-                                                    <tr class="portlet-section-header results-header">  
+                                                    <tr class="portlet-section-header results-header"> 
+                                                               <th nowrap class="col-1 "  > 修改</th>
                                                                <th nowrap class="col-1 "  > 提交</th>
-                                                               <th nowrap class="col-2 "  > 撤回</th>
+                                                               <th nowrap class="col-2 "  > 撤回</th> 
+
                                                     </tr>
                                                  </table>
                                                  <table class="taglib-search-iterator">	
                                                         <tr class="portlet-section-header results-header">	
-                                                               <th nowrap class="col-1 "	>	选择</th>
-                                                               <th nowrap class="col-2 "	>	日期	</th>
-                                                               <th nowrap class="col-3 "	>	形态</th>
-                                                               <th nowrap class="col-4 "	>	开始</th>
-                                                               <th nowrap class="col-5"  > 结束</th>
-                                                               <th nowrap class="col-6"  > 出勤</th>
-                                                               <th nowrap class="col-7"  > 工作</th>
-                                                               <th nowrap class="col-8"  > 休息</th>
-                                                               <th nowrap class="col-9"  > 外出</th>
-                                                               <th nowrap class="col-10"  > 加班</th>
-                                                               <th nowrap class="col-11"  > 休假</th>
-                                                               <th nowrap class="col-12"  > 缺勤</th>
-                                                               <th nowrap class="col-13"  > 承认</th>
-                                                               <th nowrap class="col-14 "	>	&nbsp;	</th>	
+                                                               <th nowrap class="col-1"	align="middle" valign="middle" >	开始时间</th>
+                                                               <th nowrap class="col-2"	align="middle" valign="middle" > 结束时间</th>
+                                                               <th nowrap class="col-3"	align="middle" valign="middle" >	时间(小时)</th>
+                                                               <th nowrap class="col-4"	align="middle" valign="middle" >	公司外</th>
+                                                               <th nowrap class="col-5" align="middle" valign="middle" > 加班</th>
+                                                               <th nowrap class="col-6" align="middle" valign="middle" > 休假</th>
+                                                               <th nowrap class="col-7" align="middle" valign="middle" > 项目</th>
+                                                               <th nowrap class="col-8" align="middle" valign="middle" > 备注</th>
+                                                               
                                                         </tr>
                                                         <tr class="lfr-template portlet-section-body results-row">	
                                                                <td></td>
@@ -473,119 +503,80 @@
                                                                <td></td>
                                                                <td></td>
                                                                <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-
+                                                             
                                                         </tr>
                                                         <tr class="portlet-section-body results-row"	onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"	>	
                                                                <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
+                                                                    9：00  
                                                                </td>
 
                                                                <td align="middle" class="col-2" colspan="1" valign="middle">	
-                                                                      9/1	
+                                                                     10：30 
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">
-                                                                      日
+                                                                     1.5 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      休日	
+                                                                     否 
                                                                </td>
                                                                <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      --
+                                                                      否
                                                                </td>
                                                                <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
+                                                                      否
                                                                </td>
                                                                <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
+                                                                      P0017-MCG
                                                                </td>
                                                                <td align="middle" class="col-8" colspan="1" valign="middle">
                                                                       --
                                                                </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="right" class="col-14" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right ">	
-                                                                             <li class="lfr-trigger">	<strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
+                                                               
                                                         </tr>
 
 
-                                                                                                                <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
+                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
                                                                <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
+                                                                    9：00  
                                                                </td>
 
                                                                <td align="middle" class="col-2" colspan="1" valign="middle">  
-                                                                      9/2 
+                                                                     10：30 
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">
-                                                                      一
+                                                                     1.5 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      出勤日  
+                                                                     否 
                                                                </td>
                                                                <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      9：00
+                                                                      否
                                                                </td>
                                                                <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      18：30
+                                                                      否
                                                                </td>
                                                                <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      9.5
+                                                                      P007-部门业务
                                                                </td>
                                                                <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      8
+                                                                      --
                                                                </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      1.5
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      0
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      0.5
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      0
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      0
-                                                               </td>
-                                                               <td align="right" class="col-14" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点2……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
+                                                               
                                                         </tr>
+                                                       
 
-
+                                                        <tr  class="portlet-section-body results-row">
+                                                          <td align="left" class="col-9" colspan="15" valign="middle">
+                                                            <input type="image" src="./img/common/add_article.png" alt="添加新纪录" onclick="alert("添加新纪录")" />
+                                                          </td>
+                                                        </tr>
                                                  </table>
                                                  <table class="taglib-search-iterator"> 
                                                     <tr class="portlet-section-header results-header">  
+                                                               <th nowrap class="col-1 "  > 修改</th>
                                                                <th nowrap class="col-1 "  > 提交</th>
-                                                               <th nowrap class="col-2 "  > 撤回</th>
+                                                               <th nowrap class="col-2 "  > 撤回</th> 
+
                                                     </tr>
                                                  </table>
                                           </div>
