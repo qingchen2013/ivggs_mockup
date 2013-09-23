@@ -18,6 +18,8 @@
     <link href="./css/main.css" rel="stylesheet" type="text/css"> 
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./css/ivggs.css" rel="stylesheet" type="text/css">
+
 
     <style>
       body {
@@ -324,7 +326,7 @@
                           <div class="portlet-topper">
                                    <span class="portlet-title">
                                           <span><img class="icon" src="img/spacer.png"  alt="勤怠明細" title="勤怠明細" style="background-image: url('/html/icons/.sprite.png'); background-position: 50% -192px; background-repeat: no-repeat; height: 16px; width: 16px;" />
-                                          </span>勤怠明細
+                                          </span>勤怠明細>>勤怠明細查询
                                    </span>
 
                           </div>
@@ -362,9 +364,9 @@
                                             <li class="submenu-li" data-submenu-id="submenu-sp-hol">
                                                 <a href="#">休假</a>
                                                 <div id="submenu-sp-hol" class="popover">
-                                                    <h3 class="popover-title">查询休假</h3>
-                                                    <h3 class="popover-title">填写休假</h3>
-                                                    <h3 class="popover-title">审核休假</h3>
+                                                    <h3 class="popover-title" onmouseover="this.className = 'submenu-onmouseover';" onmouseout="this.className = 'submenu-onmouseout';"  >>查询休假</h3>
+                                                    <h3 class="popover-title" onmouseover="this.className = 'submenu-onmouseover';" onmouseout="this.className = 'submenu-onmouseout';"  >>填写休假</h3>
+                                                    <h3 class="popover-title" onmouseover="this.className = 'submenu-onmouseover';" onmouseout="this.className = 'submenu-onmouseout';"  >>审核休假</h3>
                                                     
                                                     
                                                 </div>
@@ -664,6 +666,4 @@
         });
 
     </script>
-
-
 </html>

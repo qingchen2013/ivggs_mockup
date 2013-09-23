@@ -10,7 +10,7 @@
     -->
 
     <meta charset="utf-8">
-    <title>勤怠明細修改</title>
+    <title>menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -129,46 +129,7 @@
                                   </div>
                               </div>     
                             </div>
-                            <div class="portlet-content">
-                                          
-                                          <div class="results-grid"	>	
-                                                 <table class="taglib-search-iterator">	
-                                                       
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                               <td nowrap class="col-1"  colspan="2">勤務状態ID
-                                                               </td>
-                                                               </td>
-                                                               <td nowrap class="col-3" colspan="7">JT001
-                                                               </td>
-                                                               
-                                                        </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                                <td nowrap class="col-1" colspan="2">勤務状態名称
-                                                                </td>
-                                                                <td nowrap class="col-3" colspan="7">勤務状態_上海１
-                                                                </td>
-                                                               
-                                                        </tr>
-                                                        <tr  class="portlet-section-body results-row">
-                                                        </tr>
-
-
-                                                 </table>
-                                                 <table class="taglib-search-iterator"> 
-                                                    <tr class="portlet-section-header results-header">  
-                                                               <th nowrap class="col-1 "  > 保存</th> 
-                                                               <th nowrap class="col-2 "  > 提交</th>
-                                                               <th nowrap class="col-3 "  > 撤回</th>
-                                                    </tr>
-                                                 </table>
-                                          </div>
-                                          <div class="taglib-search-iterator-page-iterator-bottom">	
-                                                 <div class="taglib-page-iterator">
-                                                        <div class="search-results">	共: 2 件/30件
-                                                        </div>
-                                                 </div>
-                                          </div>
-                                   </div>
+                            
                             </div>
                      </div>
 

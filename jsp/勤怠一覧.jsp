@@ -15,9 +15,10 @@
     <meta name="description" content="sss">
     <meta name="author" content="sss">
 
-    <link href="css/main.css" rel="stylesheet" type="text/css"> 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet" type="text/css"> 
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./css/ivggs.css" rel="stylesheet" type="text/css">
 
     <style>
       body {
@@ -476,7 +477,7 @@
                                                         </tr>
                                                         <tr class="portlet-section-body results-row"	onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"	>	
                                                                <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
+                                                                    <input type="checkbox" name="checkbox1" value="">
                                                                </td>
                                                                <td align="middle" class="col-2" colspan="1" valign="middle">
                                                                  已提交
@@ -532,7 +533,57 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/2 
+                                                               </td>
+                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
+                                                                      日
+                                                               </td>
+                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
+                                                                      休日  
+                                                               </td>
+                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td align="middle" class="col-14" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td align="right" class="col-15" colspan="1" valign="middle">
+                                                                      <ul class="lfr-component lfr-actions right "> 
+                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
+                                                                             </li>
+                                                                      </ul>
+                                                               </td>
+                                                        </tr>
+                                                        <tr class="portlet-section-body results-row alert"  onmouseover="this.className = 'portlet-section-body-hover results-row alert hover';" onmouseout="this.className = 'portlet-section-body results-row alert';"  > 
+                                                               <td align="middle" class="col-1" colspan="1">
+                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
+                                                               </td>
+                                                               <td align="middle" class="col-2" colspan="1" valign="middle">
+                                                                 已提交
+                                                               </td>
+                                                               <td align="middle" class="col-3" colspan="1" valign="middle">  
+                                                                      9/3 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -582,7 +633,7 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/4 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -632,7 +683,7 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/5 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -682,7 +733,7 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/6 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -732,7 +783,7 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/7 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -782,7 +833,7 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/8 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -832,7 +883,7 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/9 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -882,7 +933,7 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/10 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -932,7 +983,7 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/11 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -982,57 +1033,7 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
-                                                               </td>
-                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
-                                                               </td>
-                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
-                                                               </td>
-                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-14" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
-                                                        </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                               <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
-                                                               </td>
-                                                               <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
-                                                               </td>
-                                                               <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/1 
+                                                                      9/12
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       日
@@ -1084,7 +1085,7 @@
                                                                       未提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/2 
+                                                                      9/13 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
                                                                       一

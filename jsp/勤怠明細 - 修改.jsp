@@ -47,7 +47,7 @@
                           <div class="portlet-topper">
                                    <span class="portlet-title">
                                           <span><img class="icon" src="img/spacer.png"  alt="勤怠明細" title="勤怠明細" style="background-image: url('/html/icons/.sprite.png'); background-position: 50% -192px; background-repeat: no-repeat; height: 16px; width: 16px;" />
-                                          </span>勤怠明細
+                                          </span>勤怠明細>>勤怠明細修改
                                    </span>
 
                           </div>
