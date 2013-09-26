@@ -19,269 +19,25 @@
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link href="./css/ivggs.css" rel="stylesheet" type="text/css">
-
-    <style>
-      body {
-        padding-top: 2px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-
-      ul li, ol ul li {
-      list-style: none;
-      }
-      .portlet-head {
-      /*background: url(../img/meta/portlet/ttl_bg.gif) 0 50% repeat-x;
-      */
-      border-bottom:solid 0px #b1b1b1;
-      float:left;
-      display: block;
-      font-weight: bold;
-      padding: 6px 0 4px 10px;
-      width: 100%;
-      }
-      .portlet-menu {
-      /*background: url(../img/meta/portlet/ttl_bg.gif) 0 50% repeat-x;
-      */
-      border-bottom:solid 0px #b1b1b1;
-      float:left;
-      display: block;
-      font-weight: bold;
-      padding: 6px 0 4px 10px;
-      /*width: 100%;
-      */
-      }
-
-      .portlet-user {
-      background: url(../img/portlet/portlet_bg.gif) 0 50% repeat-x;
-      border-bottom:solid 1px #b1b1b1;
-      float:left;
-      display: block;
-      font-weight: bold;
-      padding: 6px 0 4px 10px;
-      width: 100%;
-      }
-      .portlet-user-info-row{
-        background: #727C81;
-        font-size: 14px;
-      }
-      .user-results-header {
-        background: #727C81;
-        border-bottom:solid 1px #b1b1b1;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        color: #333333;
-        text-align: left;
-        font-weight: bold;
-        border-color: gray;
-        border-collapse: collapse;
-        border-spacing: 0;
-        }
+    <link href="./css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css">
 
 
-      .portlet-content {
-        background-position: left bottom;
-        padding: 20px 5px 25px 15px;
-        }
+    <style type="text/css">
+   .hide-div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    filter:alpha(opacity=90);
+    opacity:   0.9;
+    -moz-opacity:0.9;
+    background: gray;
+     
+   }
+    
 
-       .portlet-ui-menu{
-          padding:0 0 0 10px;
-       } 
-
-       .portlet-ui-menu li{
-          display: inline;
-          float: left;
-          line-height: 2;
-          padding: 0;
-          text-decoration: none;
-          font-size:10px;
-       }
-       .lfr-actions .lfr-trigger strong span {
-        background: url(img/common/action.png) no-repeat 5px 50%;
-        }
-        .lfr-trigger strong span {
-        background: url(img/common/action.png) no-repeat 5px 50%;
-        padding: 2px 10px 2px 35px;
-        }
-
-        .user-results-header {
-          background: #36A0D5;
-          border-collapse: collapse;
-          border-spacing: 0;
-          padding: 1px 0 0;
-          border-spacing: 2px;
-          border-color: gray;
-        }
-
-        .search-pages  {
-          float: right;
-        }
-        .delta-selector {
-          float:left;
-          height: 28px;
-        }
-        .search-pages ,.page-selector {
-          margin-left: 10px;
-          margin-right: 10px;
-          padding-left: 10px;
-          padding-right: 10px;
-
-        }
-
-        .search-pages {
-           width: 355px;
-
-        }
-
-        .page-head{
-          width: 100%;
-
-        }
-
-        .page-selector {
-          float: right;
-          width: 270px;
-          height: 28px;
-          border-width: 0px medium;
-
-        }
-        .page-link{
-          float:right;
-          height: 28px;
-          text-align:center;
-          line-height:28px;
-        }
-
-
-        select {
-        background-image: url(../images/forms/input_shadow.png);
-        background-repeat: no-repeat;
-        border: 1px solid;
-        border-color: #BFBFBF #DEDEDE #DEDEDE #BFBFBF;
-        font: 1em 'Tahoma','Lucida Sans Unicode','Lucida Grande','Lucida',Arial,Verdana,sans-serif;
-        padding: 5px 1px;
-        width: 40px;
-        height: 28px;
-
-        }
-
-        .portlet-time{
-          float: right;
-        }
-
-
-
-        #nav-bar-inner .nav_a, #navbar.nav-beacon #nav-bar-inner .nav_a:link, #navbar.nav-beacon #nav-bar-inner .nav_a:visited {
-        text-decoration: none;
-        color: black;
-        }
-        #nav-shop-all-button.nav-menu-active {
-        cursor: default;
-        }
-        #nav-shop-all-button, #navbar.nav-beacon .nav-shop-all-button {
-        width: 115px;
-        left: 15px;
-        }
-        .nav-button-outer {
-          cursor: pointer;
-          top: 8px;
-          height: 40px;
-          display: block;
-          text-decoration: none;
-        }
-
-
-        .navbar .popover {
-            width: 400px;
-            -webkit-border-top-left-radius: 0px;
-            -webkit-border-bottom-left-radius: 0px;
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 0px;
-            overflow: hidden;
-        }
-
-        .navbar .popover-content {
-            text-align: center;
-        }
-
-        .navbar .popover-content img {
-            height: 212px;
-            max-width: 250px;
-        }
-
-        .navbar .dropdown-menu {
-            -webkit-border-top-right-radius: 0px;
-            -webkit-border-bottom-right-radius: 0px;
-            border-top-right-radius: 0px;
-            border-bottom-right-radius: 0px;
-
-            -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-            -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-
-        }
-
-        .navbar .dropdown-menu > li > a:hover {
-            background-image: none;
-            color: white;
-            background-color: rgb(0, 129, 194);
-            background-color: rgba(0, 129, 194, 0.5);
-        }
-
-        .navbar .dropdown-menu > li > a.maintainHover {
-            color: white;
-            background-color: #0081C2;
-        }
-        .submenu-li{
-          list-style: none;
-        }
-
-        .popover-title {
-            background-color: #F7F7F7;
-            border-bottom: 1px solid #EBEBEB;
-            border-radius: 5px 5px 0 0;
-            font-size: 14px;
-            font-weight: normal;
-            line-height: 10px;
-            margin: 0;
-            padding: 8px 14px;
-        }
-
-        .popover {
-              background-clip: padding-box;
-              background-color: #FFFFFF;
-              border: 1px solid rgba(0, 0, 0, 0.2);
-              border-radius: 6px 6px 6px 6px;
-              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-              display: none;
-              left: 0;
-              padding: 1px;
-              /*
-              position: absolute;
-              */
-              text-align: left;
-              top: 0;
-              white-space: normal;
-              z-index: 1010;
-              width: 120px;
-              height: 220px ! important;
-          }
-
-        .popover-title {
-            padding: 8px 14px;
-            margin: 0;
-            font-size: 14px;
-            font-weight: normal;
-            line-height: 18px;
-            background-color: #FFFFFF;
-            border-bottom: 1px solid #ebebeb;
-            border-radius: 6px 6px 6px 6px;
-            -webkit-border-radius: 5px 5px 0 0;
-               -moz-border-radius: 5px 5px 0 0;
-                    border-radius: 5px 5px 0 0;
-            display:inline-block; 
-        }
 
     </style>
+
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
@@ -384,15 +140,15 @@
                                     </ul>
                                   </div>
                               </div>     
-                              <div class="portlet-time">
+                              <div class="time-clock">
                                       <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="160" height="70" id="honehoneclock" align="middle"><param name="allowScriptAccess" value="always"><param name="movie" value="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff"><param name="wmode" value="transparent"><embed wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf" quality="high" bgcolor="#ffffff" width="160" height="70" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
                                       </object>                      
                               </div>
                             </div>
-                                    <div class="portlet-user">
-                                      <table class="portlet-user-info">
+                                    <div class="portlet-content">
+                                      <table>
                                        
-                                          <tr class="results-header">
+                                          <tr class="iv-user-info">
                                               <td>员工ID：</td>
                                               <td>99999</td>
                                               <td>员工姓名：</td>
@@ -403,45 +159,111 @@
                                       </table>
                                     </div>
 
-                            <div class="portlet-search">
-                            </div>
+
 
                             <div class="portlet-content">
-                                   <div class="portlet-content-container" style="">
-                                                    <div class="page-date" align="center">	  
-                                                      <table border="0" cellspacing="0" cellpadding="2">
-                                                        <tbody>
-                                                          <tr valign="middle" >
-                                                          <td>
-                                                          <a href="javascript:void(0);" onclick="" title="前月へ">
-                                                          <img src="img/schedule/schedule_prevmonth.gif" border="0" alt="前月へ"></a>&nbsp;
-                                                          </td>
-                                                          
-                                                          <td nowrap="nowrap"><span style="font-weight:bold">
-                                                          2013 年 9 月
-                                                          </span></td>
-                                                          
-                                                          
-                                                          <td>
-                                                          <a href="javascript:void(0);" onclick="" title="翌月へ">
-                                                          <img src="img/schedule/schedule_nextmonth.gif" border="0" alt="翌月へ"></a>&nbsp;
-                                                          </td></tr>
-                                                        </tbody>
-                                                      </table>  
-                                                    </div>
-                                                    
-                                          </div>
-                                          
-                                          <div class="results-grid"	>	
-                                                 <table class="taglib-search-iterator"> 
-                                                    <tr class="portlet-section-header results-header">  
-                                                               <th nowrap class="col-1 "  > 提交</th>
-                                                               <th nowrap class="col-2 "  > 撤回</th>
-                                                    </tr>
-                                                 </table>
-                                                 <table class="taglib-search-iterator">	
-                                                        <tr class="portlet-section-header results-header">	
-                                                               <th nowrap class="col-1 "	>	选择</th>
+
+                                  <table>
+                                       <tr class="iv-search-result-title"> 
+                                            <th nowrap class="col-1 " colspan="4">项目工时预实对比</th>
+                                      </tr> 
+                                      <tr class="iv-search-result-head">
+                                            <th>
+                                                本月项目
+                                            </th>
+                                            <th>
+                                                 预计工时
+                                            </th>
+                                            <th>
+                                                实际填写工时
+                                            </th>
+                                      </tr>
+                                      <tr class="iv-search-result-detail " onmouseover="this.className = 'iv-search-result-detail iv-search-result-detail-hover';" onmouseout="this.className = 'iv-search-result-detail';">
+                                            
+                                            <td>
+                                                yazak
+                                            </td>
+                                            <TD>
+                                                6.0
+                                            </TD>
+                                            <td>
+                                                5.0
+                                            </td>
+                                      </tr>
+                                      <tr class="iv-search-result-detail " >
+                                            
+                                            <td>
+                                                MICS
+                                            </td>
+                                            <TD>
+                                                6.0
+                                            </TD>
+                                            <td >
+                                                7.0
+                                            </td>
+                                      </tr>
+                                      <tr class="iv-search-result-detail alert-font" >
+                                            
+                                            <td>
+                                                ART
+                                            </td>
+                                            <TD>
+                                                6.0
+                                            </TD>
+                                            <td class="">
+                                                --
+                                            </td>
+                                      </tr>
+                                  </table>
+                                  <br>
+                                  <table class=""> 
+
+                                     
+
+                                      <tr class="iv-search-result-title"> 
+                                            <th nowrap class="col-1 " colspan="16">勤怠一覧</th>
+                                      </tr> 
+                                      <tr class="iv-data-detail-buttom">
+                                                      <td  class="col-1 iv-date-detail-field" colspan="13">
+                                                      <a href="javascript:void(0);" onclick="" title="前月へ">
+                                                      <img src="img/schedule/schedule_prevmonth.gif" border="0" alt="前月へ"></a>&nbsp;<span >
+                                                                     <select class="year-select" selectid="fontType" title="年份">
+                                                                        <option value="0" selected>2013</option>
+                                                                        <option value="1">2014</option>
+                                                  
+                                                                      </select>
+                                                                      <select class="month-select" selectid="fontType" title="月份">
+                                                                        <option value="0" selected>1</option>
+                                                                        <option value="1">2</option>
+                                                                        <option value="1">3</option>
+                                                                        <option value="1">4</option>
+                                                                        <option value="1">5</option>
+                                                                        <option value="1">6</option>
+
+                                                  
+                                                                      </select>
+
+                                                      </span>
+
+                                                      <a href="javascript:void(0);" onclick="" title="翌月へ">
+                                                      <img src="img/schedule/schedule_nextmonth.gif" border="0" alt="翌月へ"></a>
+                                                      </td> 
+                                                      <td colspan="4">
+                                                          <a href="">
+                                                                                      <img src="./img/common/add_article.png">
+                                                                                      <span>提交</span>
+                                                                                    </a>
+                                                                                  &nbsp;
+                                                                                    <a href="">
+                                                                                      <img src="./img/common/undo.png">
+                                                                                      <span>撤回</span>
+                                                                                    </a>
+                                                                                    &nbsp;
+                                                                                    &nbsp;
+                                                      </td>
+                                      </tr>
+                                                        <tr class="iv-search-result-head">	
+                                                               <th nowrap class="col-1 "	>	全选</th>
                                                                <th nowrap class="col-2 "  > 工时状态</th>
                                                                <th nowrap class="col-3 "	>	日期	</th>
                                                                <th nowrap class="col-4 "	>	形态</th>
@@ -449,65 +271,49 @@
                                                                <th nowrap class="col-6"  > 结束</th>
                                                                <th nowrap class="col-7"  > 出勤</th>
                                                                <th nowrap class="col-8"  > 工作</th>
-                                                               <th nowrap class="col-9"  > 休息</th>
-                                                               <th nowrap class="col-10"  > 外出</th>
-                                                               <th nowrap class="col-11"  > 加班</th>
-                                                               <th nowrap class="col-12"  > 休假</th>
+                                                               <th nowrap class="col-9"  > 项目</th>
+                                                               <th nowrap class="col-10"  > 休息</th>
+                                                               <th nowrap class="col-11"  > 外出</th>
+                                                               <th nowrap class="col-12"  > 加班</th>
+                                                               <th nowrap class="col-13"  > 休假</th>
                                                                <th nowrap class="col-14"  > 缺勤</th>
                                                                <th nowrap class="col-15"  > 承认</th>
                                                                <th nowrap class="col-16 "	>	&nbsp;	</th>	
                                                         </tr>
-                                                        <tr class="lfr-template portlet-section-body results-row">	
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-
-                                                        </tr>
-                                                        <tr class="portlet-section-body results-row"	onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"	>	
+                                                      
+                                                        <tr class="iv-search-result-detail " onmouseover="this.className = 'iv-search-result-detail iv-search-result-detail-hover';" onmouseout="this.className = 'iv-search-result-detail';">	
                                                                <td align="middle" class="col-1" colspan="1">
                                                                     <input type="checkbox" name="checkbox1" value="">
                                                                </td>
                                                                <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
+                                                                 未提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">	
-                                                                      9/1	
+                                                                      9/1	 日
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
+                                                                      出勤日
                                                                </td>
                                                                <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日	
+                                                                      9：00	
                                                                </td>
                                                                <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
+                                                                      17：30
                                                                </td>
                                                                <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
+                                                                      是
                                                                </td>
                                                                <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
+                                                                      7.5
                                                                </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      --
+                                                               <td id="ti-1" align="middle" class="col-9 pj-period" colspan="1" valign="middle">
+                                                                      5.0
                                                                </td>
                                                                <td align="middle" class="col-10" colspan="1" valign="middle">
                                                                       --
                                                                </td>
                                                                <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
+                                                                      -
                                                                </td>
                                                                <td align="middle" class="col-12" colspan="1" valign="middle">
                                                                       --
@@ -518,14 +324,17 @@
                                                                <td align="middle" class="col-14" colspan="1" valign="middle">
                                                                       --
                                                                </td>
-                                                               <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right ">	
-                                                                             <li class="lfr-trigger">	<strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
+                                                               <td align="middle" class="col-15" colspan="1" valign="middle">
+                                                                      未承认
+                                                               </td>
+                                                               <td align="right" class="col-16" colspan="1" valign="middle">
+                                                                     <a href="">
+                                                                                      <img src="./img/common/info.png">
+                                                                                      <span>明细</span>
+                                                                                    </a>
                                                                </td>
                                                         </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
+                                                        <tr class="iv-search-result-detail" onmouseover="this.className = 'iv-search-result-detail iv-search-result-detail-hover';" onmouseout="this.className = 'iv-search-result-detail';"> 
                                                                <td align="middle" class="col-1" colspan="1">
                                                                     <input type="checkbox" name="checkbox1" value="checkbox">
                                                                </td>
@@ -533,22 +342,25 @@
                                                                  已提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/2 
+                                                                      9/2 月 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
+                                                                      出勤日
                                                                </td>
                                                                <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
+                                                                      9：00  
                                                                </td>
                                                                <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
+                                                                      19：00
                                                                </td>
                                                                <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
+                                                                      是
                                                                </td>
                                                                <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
+                                                                      8.5
+                                                               </td>
+                                                               <td id="ti-2" align="middle" class="col-8 pj-period"  colspan="1" valign="middle">
+                                                                      1.0
                                                                </td>
                                                                <td align="middle" class="col-9" colspan="1" valign="middle">
                                                                       --
@@ -557,7 +369,7 @@
                                                                       --
                                                                </td>
                                                                <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
+                                                                      是
                                                                </td>
                                                                <td align="middle" class="col-12" colspan="1" valign="middle">
                                                                       --
@@ -566,39 +378,42 @@
                                                                       --
                                                                </td>
                                                                <td align="middle" class="col-14" colspan="1" valign="middle">
-                                                                      --
+                                                                      未承认
                                                                </td>
                                                                <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
+                                                                     <a href="">
+                                                                                      <img src="./img/common/info.png">
+                                                                                      <span>明细</span>
+                                                                                    </a>
                                                                </td>
                                                         </tr>
-                                                        <tr class="portlet-section-body results-row alert"  onmouseover="this.className = 'portlet-section-body-hover results-row alert hover';" onmouseout="this.className = 'portlet-section-body results-row alert';"  > 
+                                                        <tr class="iv-search-result-detail alert" onmouseover="this.className = 'iv-search-result-detail ';" onmouseout="this.className = 'iv-search-result-detail alert';">  
                                                                <td align="middle" class="col-1" colspan="1">
                                                                     <input type="checkbox" name="checkbox1" value="checkbox">
                                                                </td>
                                                                <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
+                                                                 未提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/3 
+                                                                      9/3 火 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
+                                                                      出勤日
                                                                </td>
                                                                <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
+                                                                      9：00  
                                                                </td>
                                                                <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
+                                                                      15：00
                                                                </td>
                                                                <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
+                                                                      是
                                                                </td>
-                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
+                                                               <td  align="middle" class="col-8" colspan="1" valign="middle">
+                                                                      6.0
+                                                               </td>
+                                                               <td id="ti-3" align="middle" class="col-8  pj-period" colspan="1" valign="middle">
+                                                                      1
                                                                </td>
                                                                <td align="middle" class="col-9" colspan="1" valign="middle">
                                                                       --
@@ -619,32 +434,35 @@
                                                                       --
                                                                </td>
                                                                <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
+                                                                     <a href="">
+                                                                                      <img src="./img/common/info.png">
+                                                                                      <span>明细</span>
+                                                                                    </a>
                                                                </td>
                                                         </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
+                                                        <tr class="iv-search-result-detail alert" onmouseover="this.className = 'iv-search-result-detail ';" onmouseout="this.className = 'iv-search-result-detail alert';">  
                                                                <td align="middle" class="col-1" colspan="1">
                                                                     <input type="checkbox" name="checkbox1" value="checkbox">
                                                                </td>
                                                                <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
+                                                                 未提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/4 
+                                                                      9/4 水 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
+                                                                      出勤日
                                                                </td>
                                                                <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
+                                                                      -- 
                                                                </td>
                                                                <td align="middle" class="col-6" colspan="1" valign="middle">
                                                                       --
                                                                </td>
                                                                <td align="middle" class="col-7" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td id="ie2"align="middle" class="col-8" colspan="1" valign="middle">
                                                                       --
                                                                </td>
                                                                <td align="middle" class="col-8" colspan="1" valign="middle">
@@ -669,32 +487,35 @@
                                                                       --
                                                                </td>
                                                                <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
+                                                                     <a href="">
+                                                                                      <img src="./img/common/info.png">
+                                                                                      <span>明细</span>
+                                                                                    </a>
                                                                </td>
                                                         </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
+                                                        <tr class="iv-search-result-detail alert" onmouseover="this.className = 'iv-search-result-detail ';" onmouseout="this.className = 'iv-search-result-detail alert';">  
                                                                <td align="middle" class="col-1" colspan="1">
                                                                     <input type="checkbox" name="checkbox1" value="checkbox">
                                                                </td>
                                                                <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
+                                                                 未提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/5 
+                                                                      9/5 木 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
+                                                                      出勤日
                                                                </td>
                                                                <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
+                                                                      -- 
                                                                </td>
                                                                <td align="middle" class="col-6" colspan="1" valign="middle">
                                                                       --
                                                                </td>
                                                                <td align="middle" class="col-7" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td id="ie2"align="middle" class="col-8" colspan="1" valign="middle">
                                                                       --
                                                                </td>
                                                                <td align="middle" class="col-8" colspan="1" valign="middle">
@@ -719,32 +540,35 @@
                                                                       --
                                                                </td>
                                                                <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
+                                                                     <a href="">
+                                                                                      <img src="./img/common/info.png">
+                                                                                      <span>明细</span>
+                                                                                    </a>
                                                                </td>
                                                         </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
+                                                        <tr class="iv-search-result-detail" onmouseover="this.className = 'iv-search-result-detail iv-search-result-detail-hover';" onmouseout="this.className = 'iv-search-result-detail';">  
                                                                <td align="middle" class="col-1" colspan="1">
                                                                     <input type="checkbox" name="checkbox1" value="checkbox">
                                                                </td>
                                                                <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
+                                                                 未提交
                                                                </td>
                                                                <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/6 
+                                                                      9/6 金 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
+                                                                      休日
                                                                </td>
                                                                <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
+                                                                      -- 
                                                                </td>
                                                                <td align="middle" class="col-6" colspan="1" valign="middle">
                                                                       --
                                                                </td>
                                                                <td align="middle" class="col-7" colspan="1" valign="middle">
+                                                                      --
+                                                               </td>
+                                                               <td id="ie2"align="middle" class="col-8" colspan="1" valign="middle">
                                                                       --
                                                                </td>
                                                                <td align="middle" class="col-8" colspan="1" valign="middle">
@@ -769,384 +593,18 @@
                                                                       --
                                                                </td>
                                                                <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
+                                                                     <a href="">
+                                                                                      <img src="./img/common/info.png">
+                                                                                      <span>明细</span>
+                                                                                    </a>
                                                                </td>
                                                         </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                               <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
-                                                               </td>
-                                                               <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
-                                                               </td>
-                                                               <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/7 
-                                                               </td>
-                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
-                                                               </td>
-                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
-                                                               </td>
-                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-14" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
-                                                        </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                               <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
-                                                               </td>
-                                                               <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
-                                                               </td>
-                                                               <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/8 
-                                                               </td>
-                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
-                                                               </td>
-                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
-                                                               </td>
-                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-14" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
-                                                        </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                               <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
-                                                               </td>
-                                                               <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
-                                                               </td>
-                                                               <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/9 
-                                                               </td>
-                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
-                                                               </td>
-                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
-                                                               </td>
-                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-14" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
-                                                        </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                               <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
-                                                               </td>
-                                                               <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
-                                                               </td>
-                                                               <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/10 
-                                                               </td>
-                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
-                                                               </td>
-                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
-                                                               </td>
-                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-14" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
-                                                        </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                               <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
-                                                               </td>
-                                                               <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
-                                                               </td>
-                                                               <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/11 
-                                                               </td>
-                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
-                                                               </td>
-                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
-                                                               </td>
-                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-14" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
-                                                        </tr>
-                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                               <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
-                                                               </td>
-                                                               <td align="middle" class="col-2" colspan="1" valign="middle">
-                                                                 已提交
-                                                               </td>
-                                                               <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/12
-                                                               </td>
-                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      日
-                                                               </td>
-                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      休日  
-                                                               </td>
-                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="middle" class="col-14" colspan="1" valign="middle">
-                                                                      --
-                                                               </td>
-                                                               <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点1……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
-                                                        </tr>
-
-
-                                                      <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  > 
-                                                               <td align="middle" class="col-1" colspan="1">
-                                                                    <input type="checkbox" name="checkbox1" value="checkbox">
-                                                               </td>
-                                                               <td align="middle" class="col-2" colspan="1" valign="middle">  
-                                                                      未提交
-                                                               </td>
-                                                               <td align="middle" class="col-3" colspan="1" valign="middle">  
-                                                                      9/13 
-                                                               </td>
-                                                               <td align="middle" class="col-4" colspan="1" valign="middle">
-                                                                      一
-                                                               </td>
-                                                               <td align="middle" class="col-5" colspan="1" valign="middle">
-                                                                      出勤日  
-                                                               </td>
-                                                               <td align="middle" class="col-6" colspan="1" valign="middle">
-                                                                      9：00
-                                                               </td>
-                                                               <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      18：30
-                                                               </td>
-                                                               <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      9.5
-                                                               </td>
-                                                               <td align="middle" class="col-9" colspan="1" valign="middle">
-                                                                      8
-                                                               </td>
-                                                               <td align="middle" class="col-10" colspan="1" valign="middle">
-                                                                      1.5
-                                                               </td>
-                                                               <td align="middle" class="col-11" colspan="1" valign="middle">
-                                                                      0
-                                                               </td>
-                                                               <td align="middle" class="col-12" colspan="1" valign="middle">
-                                                                      0.5
-                                                               </td>
-                                                               <td align="middle" class="col-13" colspan="1" valign="middle">
-                                                                      0
-                                                               </td>
-                                                               <td align="middle" class="col-14" colspan="1" valign="middle">
-                                                                      0
-                                                               </td>
-                                                               <td align="right" class="col-15" colspan="1" valign="middle">
-                                                                      <ul class="lfr-component lfr-actions right "> 
-                                                                             <li class="lfr-trigger"> <strong><span title="详细" onclick=alert("节点2……")>详细</span></strong>
-                                                                             </li>
-                                                                      </ul>
-                                                               </td>
-                                                        </tr>
-                                                        <tr class="lfr-template portlet-section-body results-row">  
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-                                                               <td></td>
-
-                                                        </tr>
-                                                        <tr class="portlet-section-header results-header">  
-                                                               <th nowrap class="col-1 "  > 选择</th>
+                                                       
+                                                        
+                                                       
+                                                    
+                                                        <tr class="iv-search-result-head">  
+                                                               <th nowrap class="col-1 "  >全选</th>
                                                                <th nowrap class="col-2 "  > 工时状态</th>
                                                                <th nowrap class="col-3 "  > 日期  </th>
                                                                <th nowrap class="col-4 "  > 形态</th>
@@ -1154,31 +612,128 @@
                                                                <th nowrap class="col-6"  > 结束</th>
                                                                <th nowrap class="col-7"  > 出勤</th>
                                                                <th nowrap class="col-8"  > 工作</th>
+                                                               <th nowrap class="col-8"  > 项目</th>
                                                                <th nowrap class="col-9"  > 休息</th>
                                                                <th nowrap class="col-10"  > 外出</th>
                                                                <th nowrap class="col-11"  > 加班</th>
                                                                <th nowrap class="col-12"  > 休假</th>
-                                                               <th nowrap class="col-14"  > 缺勤</th>
-                                                               <th nowrap class="col-15"  > 承认</th>
-                                                               <th nowrap class="col-16 " > &nbsp;  </th> 
-                                                        </tr>
-
-
-
-                                                 </table>
-                                                 <table class="taglib-search-iterator"> 
-                                                    <tr class="portlet-section-header results-header">  
-                                                               <th nowrap class="col-1 "  > 提交</th>
-                                                               <th nowrap class="col-2 "  > 撤回</th>
+                                                               <th nowrap class="col-13"  > 缺勤</th>
+                                                               <th nowrap class="col-14"  > 承认</th>
+                                                               <th nowrap class="col-15 " > &nbsp;  </th> 
+                                                        </tr > 
+                                                    <tr class="iv-data-detail-buttom">
+                                                      <td  class="col-1 iv-date-detail-field" colspan="13">
+                                                      <a href="javascript:void(0);" onclick="" title="前月へ">
+                                                      <img src="img/schedule/schedule_prevmonth.gif" border="0" alt="前月へ"></a>&nbsp;<span>
+                                                        <input class="time-input-text" id="monthpicker2" value="2013/09" />
+                                                      </span>
+                                                      <a href="javascript:void(0);" onclick="" title="翌月へ">
+                                                      <img src="img/schedule/schedule_nextmonth.gif" border="0" alt="翌月へ"></a>
+                                                      </td> 
+                                                      <td colspan="4">
+                                                          <a href="">
+                                                                                      <img src="./img/common/add_article.png">
+                                                                                      <span>提交</span>
+                                                                                    </a>
+                                                                                  &nbsp;
+                                                                                    <a href="">
+                                                                                      <img src="./img/common/undo.png">
+                                                                                      <span>撤回</span>
+                                                                                    </a>
+                                                      </td>
                                                     </tr>
                                                  </table>
-                                          </div>
-                                          <div class="taglib-search-iterator-page-iterator-bottom">	
-                                                 <div class="taglib-page-iterator">
-                                                        <div class="search-results">	共: 2 件/30件
-                                                        </div>
-                                                 </div>
-                                          </div>
+                                                
+            <div id="hide1" class="hide-div">
+            <table width="194" height="101" border="0" cellpadding="0" cellspacing="1" bgcolor="#C1F0FF" >
+                  <tr class="iv-search-result-title"> 
+                        <th nowrap class="col-1 " colspan="4">项目工时</th>
+                  </tr> 
+                                                  
+                                                  <tr class="iv-search-result-detail ">
+                                                        
+                                                        <td>
+                                                            yazak
+                                                        </td>
+                                                        <td>
+                                                            5.0 小时
+                                                        </td>
+
+                                                  </tr>
+                                                  <tr class="iv-search-result-detail" >
+                                                        
+                                                        <td>
+                                                            MICS
+                                                        </td>
+                                                        <td>
+                                                            1.0 小时
+                                                        </td>
+                                                  </tr>
+                                                  <tr class="iv-search-result-detail " >
+                                                        
+                                                        <td>
+                                                           部门业务
+                                                        </td>
+                                                        <td>
+                                                            1.5 小时
+                                                        </td>
+                                                  </tr>
+            </table>
+            </div>
+            <div id="hide2" class="hide-div">
+            <table width="194" height="101" border="0" cellpadding="0" cellspacing="1" bgcolor="#C1F0FF" >
+                  <tr class="iv-search-result-title"> 
+                        <th nowrap class="col-1 " colspan="4">项目工时</th>
+                  </tr> 
+                                                  
+                                              
+                                                  <tr class="iv-search-result-detail" >
+                                                        
+                                                        <td>
+                                                            MICS
+                                                        </td>
+                                                        <td>
+                                                            1.0 小时
+                                                        </td>
+                                                  </tr>
+                                                  <tr class="iv-search-result-detail " >
+                                                        
+                                                        <td>
+                                                            部门业务
+                                                        </td>
+                                                        <td>
+                                                            7.5 小时
+                                                        </td>
+                                                  </tr>
+            </table>
+            </div>
+             <div id="hide3" class="hide-div">
+            <table width="194" height="101" border="0" cellpadding="0" cellspacing="1" bgcolor="#C1F0FF" >
+                  <tr class="iv-search-result-title"> 
+                        <th nowrap class="col-1 " colspan="4">项目工时</th>
+                  </tr> 
+                                                  
+                                              
+                                                  <tr class="iv-search-result-detail" >
+                                                        
+                                                        <td>
+                                                            MICS
+                                                        </td>
+                                                        <td>
+                                                            1.0 小时
+                                                        </td>
+                                                  </tr>
+                                                  <tr class="iv-search-result-detail alert" >
+                                                        
+                                                        <td>
+                                                            非稼动
+                                                        </td>
+                                                        <td>
+                                                            5 小时
+                                                        </td>
+                                                  </tr>
+            </table>
+            </div>
                                    </div>
                             </div>
                      </div>
@@ -1191,72 +746,27 @@
 
 
 
- <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery.menu-aim.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.menu-aim.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./js/menu.js" type="text/javascript"></script>
+    <script src="./js/iv.js" type="text/javascript"></script>
+     <script src="./js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
 
-    <script type="text/javascript">
-
-        var $menu = $(".dropdown-menu");
-
-        // jQuery-menu-aim: <meaningful part of the example>
-        // Hook up events to be fired on menu row activation.
-        $menu.menuAim({
-            activate: activateSubmenu,
-            deactivate: deactivateSubmenu
-        });
-        // jQuery-menu-aim: </meaningful part of the example>
-
-        // jQuery-menu-aim: the following JS is used to show and hide the submenu
-        // contents. Again, this can be done in any number of ways. jQuery-menu-aim
-        // doesn't care how you do this, it just fires the activate and deactivate
-        // events at the right times so you know when to show and hide your submenus.
-        function activateSubmenu(row) {
-            var $row = $(row),
-                submenuId = $row.data("submenuId"),
-                $submenu = $("#" + submenuId),
-                height = $menu.outerHeight(),
-                width = $menu.outerWidth();
-
-            // Show the submenu
-            $submenu.css({
-                display: "block",
-                top: -1,
-                left: width - 3,  // main should overlay submenu
-                height: height - 4  // padding for main dropdown's arrow
-            });
-
-            // Keep the currently activated row's highlighted look
-            $row.find("a").addClass("maintainHover");
-        }
-
-        function deactivateSubmenu(row) {
-            var $row = $(row),
-                submenuId = $row.data("submenuId"),
-                $submenu = $("#" + submenuId);
-
-            // Hide the submenu and remove the row's highlighted look
-            $submenu.css("display", "none");
-            $row.find("a").removeClass("maintainHover");
-        }
-
-        // Bootstrap's dropdown menus immediately close on document click.
-        // Don't let this event close the menu if a submenu is being clicked.
-        // This event propagation control doesn't belong in the menu-aim plugin
-        // itself because the plugin is agnostic to bootstrap.
-        $(".dropdown-menu li").click(function(e) {
-            e.stopPropagation();
-        });
-
-        $(document).click(function() {
-            // Simply hide the submenu on any click. Again, this is just a hacked
-            // together menu/submenu structure to show the use of jQuery-menu-aim.
-            $(".popover").css("display", "none");
-
-            $("a.maintainHover").removeClass("maintainHover");
-        });
-
-    </script>
+  <script>
+      $(function() {
+        $( "#monthpicker1" ).datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "yy/mm"
+          });
+        $( "#monthpicker2" ).datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "yy/mm"
+          });
+      });
+  </script>
 
 
 </html>

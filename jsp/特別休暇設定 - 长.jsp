@@ -85,28 +85,28 @@
                                                       <h3 class="iv-popover-title">填写工时</h3>
                                                       <h3 class="iv-popover-title">修改工时</h3> 
                                                     <h3 class="iv-popover-title">审核工时</h3>
-                                                    <div class="popover-content"><img src="img/duoc-langur.png"></div>
+                                                    <div class=""><img src=""></div>
                                                 </div>
                                             </li>
                                             <li class="submenu-li" data-submenu-id="submenu-pygmy">
                                                 <a href="#">加班申请</a>
                                                 <div id="submenu-pygmy" class="popover">
                                                     <h3 class="iv-popover-title">Baby Pygmy Marmoset</h3>
-                                                    <div class="popover-content"><img src="img/pygmy.png"></div>
+                                                    <div class=""><img src=""></div>
                                                 </div>
                                             </li>
                                             <li class="submenu-li" data-submenu-id="submenu-tamarin">
                                                 <a href="#">休假申请</a>
                                                 <div id="submenu-tamarin" class="popover">
                                                     <h3 class="iv-popover-title">Black Lion Tamarin</h3>
-                                                    <div class="popover-content"><img src="img/tamarin.png"></div>
+                                                    <div class=""><img src=""></div>
                                                 </div>
                                             </li>
                                             <li class="submenu-li" data-submenu-id="submenu-monk">
                                                 <a href="#">勤怠承认</a>
                                                 <div id="submenu-monk" class="popover">
                                                     <h3 class="iv-popover-title">Monk Saki</h3>
-                                                    <div class="popover-content"><img src="img/monk.png"></div>
+                                                    <div class=""><img src=""></div>
                                                 </div>
                                             </li>
                                         </ul>
@@ -242,29 +242,31 @@
                                                                     </tr>
 
                                                                     <tr class="iv-data-detail-buttom">
-                                                                        <th nowrap align="right" class="col-9 " colspan="9">&nbsp;&nbsp;<a href=""><img src="./img/common/add_article.png"><span>保存修改</span>&nbsp;&nbsp;<a href=""><img src="./img/common/edit.png"><span>放弃修改</span>
+                                                                        <th nowrap align="right" class="col-9 " colspan="9">&nbsp;&nbsp;<a href=""><img src="./img/common/add_article.png"><span>保存修改</span>&nbsp;&nbsp;<a href=""><img src="./img/common/undo.png"><span>放弃修改</span>
                                                                         </th>
                                                                     </tr>
                                                                     <tr class="iv-data-detail">
                                                                         <td  class="col-1 iv-date-detail-field" colspan="1">
-                                                                          休假名称
+                                                                          休假名称:
                                                                         </td>
-                                                                        <td class="col-2 iv-date-detail-center-value" colspan="1">
+                                                                        <td class="col-2 iv-date-detail-left-value" colspan="1">
                                                                           <input type="text" class="short-input-text">
                                                                         </td>
-                                                                      	<td colspan="7">
+                                                                      	<td colspan="1">
                                                                       		
                                                                       	</td>
+                                                                        <td colspan="6">
+                                                                          
+                                                                        </td>
                                                                     </tr>
                                                                     <tr class="iv-data-detail">
                                                                         <td class="col-1 iv-date-detail-field" colspan="1">
-                                                                          休假期间
+                                                                          休假期间:
                                                                         </td>
-                                                                        <td class="col-5 iv-date-detail-center-value" colspan="1">
+                                                                        <td class="col-5 iv-date-detail-left-value" colspan="4">
                                                                         	<input type="radio" name="ot">&nbsp;
-                                                                        </td>
-                                                                        <td class="col-2 iv-date-detail-left-value" colspan="3">
-                                                                         	<input type="text" class="time-input-text"  >至<input type="text" class="time-input-text"  >
+                                                                        
+                                                                         	<input type="text" class="time-input-text"  >&nbsp;&nbsp;至&nbsp;&nbsp;<input type="text" class="time-input-text"  >
                                                                            
                                                                         </td>
                                                                         <td colspan="4">
@@ -275,11 +277,10 @@
                                                                      <tr class="iv-data-detail">
                                                                         <td class="col-1 iv-date-detail-field" colspan="1">
                                                                         </td>
-                                                                        <td class="col-5 iv-date-detail-center-value" colspan="1">
+                                                                        <td class="col-5 iv-date-detail-left-value" colspan="4">
                                                                         	<input type="radio" name="ot">&nbsp;
-                                                                        </td>
-                                                                        <td class="col-2 iv-date-detail-left-value" colspan="3">
-                                                                          <input type="text" class="time-input-text"  >&nbsp;&nbsp;半休&nbsp;（9:00-12:00 或 13:00-17:30）
+                                                                        
+                                                                          <input type="text" class="time-input-text"  >&nbsp;&nbsp;半休&nbsp;&nbsp;（9:00-12:00 或 13:00-17:30）
                                                                         </td>
                                                                         <td colspan="4">
                                                                         	
@@ -288,16 +289,17 @@
                                                                     <tr class="iv-data-detail">
                                                                         
                                                                         <td class="col-1 iv-date-detail-field" colspan="1">
-                                                                          可否换休
+                                                                          可否换休:
+                                                                        </td>
+                                                                        <td class="col-5 iv-date-detail-left-value" colspan="1">
+                                                                            <input type="radio" name="ot">&nbsp;&nbsp;可&nbsp;&nbsp;
+                                                                            <input type="radio" name="ot">&nbsp;&nbsp;不可
                                                                         </td>
                                                                         <td class="col-5 iv-date-detail-center-value" colspan="1">
-                                                                        </td>
-                                                                        <td class="col-5 iv-date-detail-center-value" colspan="1">
-                                                                          <input type="radio" name="ot">&nbsp;&nbsp;可&nbsp;&nbsp;
-                                                                          <input type="radio" name="ot">&nbsp;&nbsp;不可
+                                                                          
                                                                         </td>
                                                                         <td class="col-1 iv-date-detail-field" colspan="1">
-                                                                        	截止日
+                                                                        	截止日:
                                                                         </td>
                                                                         <td class="col-2 iv-date-detail-left-value" colspan="1">
                                                                           <input type="text" class="short-input-text" >
@@ -311,9 +313,11 @@
                                                                           休假对象
                                                                         </td>
                                                                         <td class="iv-date-detail-left-value" colspan="8">
-                                                                        		<a href="">
+                                                                        		<a id="addmember" href="">
                                                                                       <img src="./img/common/add_article.png">
                                                                                       <span>添加</span>
+
+
                                                                                     </a>
                                                                                   &nbsp;
                                                                                     <a href="">
@@ -353,16 +357,92 @@
                                                                         
                                                                     </tr>
                                                                     <tr class="iv-data-detail">
+                                                                        <td class="col1 iv-date-detail-field " colspan="1">
+                                                                        </td>
+
+                                                                        <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-left-border" colspan="3">
+                                                                          费凯达（20090101）
+                                                                        </td>
+                                                                        <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-right-border" colspan="5">
+                                                                          <a href="">
+                                                                                      <img src="./img/common/delete.png">
+                                                                            </a>
+                                                                        </td>
+                                                                        
+
+
+                                                                    </tr>
+                                                                    <tr class="iv-data-detail">
                                                                         <td class="col1 iv-date-detail-field" colspan="1">
                                                                         </td>
 
                                                                         <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-left-border" colspan="3">
-                                                                          
+                                                                          顾磊（20110401）
                                                                         </td>
                                                                         <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-right-border" colspan="5">
-                                                                          
+                                                                          <a href="">
+                                                                                      <img src="./img/common/delete.png">
+                                                                            </a>
                                                                         </td>
                                                                         
+                                                                    </tr>
+                                                                    <tr class="iv-data-detail">
+                                                                        <td class="col1 iv-date-detail-field " colspan="1">
+                                                                        </td>
+
+                                                                        <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-left-border" colspan="3">
+                                                                          费凯达（20090101）
+                                                                        </td>
+                                                                        <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-right-border" colspan="5">
+                                                                          <a href="">
+                                                                                      <img src="./img/common/delete.png">
+                                                                            </a>
+                                                                        </td>
+                                                                        
+
+
+                                                                    </tr>
+                                                                    <tr class="iv-data-detail">
+                                                                        <td class="col1 iv-date-detail-field" colspan="1">
+                                                                        </td>
+
+                                                                        <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-left-border" colspan="3">
+                                                                          顾磊（20110401）
+                                                                        </td>
+                                                                        <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-right-border" colspan="5">
+                                                                          <a href="">
+                                                                                      <img src="./img/common/delete.png">
+                                                                            </a>
+                                                                        </td>
+                                                                        
+                                                                    </tr>
+                                                                    <tr class="iv-data-detail">
+                                                                        <td class="col1 iv-date-detail-field " colspan="1">
+                                                                        </td>
+
+                                                                        <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-left-border" colspan="3">
+                                                                          费凯达（20090101）
+                                                                        </td>
+                                                                        <td class="iv-date-detail-left-value iv-sub-table-detail iv-sub-table-detail-right-border" colspan="5">
+                                                                          <a href="">
+                                                                                      <img src="./img/common/delete.png">
+                                                                            </a>
+                                                                        </td>
+                                                                        
+
+
+                                                                    </tr>
+                                                                    <tr class="iv-data-detail">
+                                                                        <td class="col1 iv-date-detail-field" colspan="1">
+                                                                        </td>
+                                                                        <td class="iv-date-detail-left-value iv-sub-table-page-menu iv-sub-table-detail-left-border" colspan="8">
+                                                                          <img src="./img/common/first-page.png">
+                                                                          <img src="./img/common/prev.png">
+                                                                          1-8 of 60
+                                                                          <img src="./img/common/next.png">
+                                                                          <img src="./img/common/last-page.png">
+
+                                                                        </td>
                                                                     </tr>
 
 
@@ -375,7 +455,7 @@
                                                                                     </a>
                                                                                   &nbsp;
                                                                                     <a href="">
-                                                                                      <img src="./img/common/edit.png">
+                                                                                      <img src="./img/common/undo.png">
                                                                                       <span>放弃修改</span>
                                                                                     </a>
                                                             
@@ -397,5 +477,21 @@
     <script src="./js/jquery.menu-aim.js" type="text/javascript"></script>
     <script src="./js/bootstrap.min.js" type="text/javascript"></script>
     <script src="./js/menu.js" type="text/javascript"></script>
+    <script src="./js/popup.js"  type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $("#addmember").click(function(){
+          var url="./ajaxpopup.jsp";
+          alert(url);
+          popupAsync(url,"",800,483);
 
+          $(".close").off("click.closepopup").on("click.closepopup",function(){
+          $('input[name="_eosFlowAction"]').val("queryOESP");
+          $("#query_form").submit();        
+          });
+          
+      })
+
+    });
+    </script>
 </html>

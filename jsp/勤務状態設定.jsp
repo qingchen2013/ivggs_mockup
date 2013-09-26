@@ -1,6 +1,6 @@
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" >
 <head>	
-<title>首页 - 上海菱威深信息技術有限公司</title>	
+<title>勤務状態設定</title>	
 <meta http-equiv="X-UA-Compatible" content="IE=8">
 
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
@@ -15,13 +15,6 @@
 
 <style type="text/css">
 	
-.lfr-tree{
-	width: 200px;
-}
-.lfr-component ,.tree-item{
-	list-style: none;
-}
-
 </style>
 
 </head>
@@ -122,174 +115,294 @@
 			 
 						<div>
 							<form action="">
-											<table  class="taglib-search-iterator">
-												<tbody>
-																	<tr>
-																		<td valign="top" >	
-																		</td>
-																		<br>
-																		<br>	
-																			<table>	
+
+
+													<table class="taglib-search-iterator">	
+                                                        <tr class="iv-search-head-title">	
+                                                               <th nowrap class="col-1 " colspan="5">检索条件</th>
+                                                               <th nowrap class="col-15 "	>	&nbsp;	</th>	
+                                                        </tr>
+
+                                                        <tr class="iv-search-head-detail">	
+                                                               <td class="col-1" colspan="1" valign="middle">
+                                                                勤務状態名称
+                                                               </td>
+                                                               <td align="left" class="col-2" colspan="2" valign="middle">	
+                                                                      <input type="text" class="short-input-text">	
+                                                               </td>
+                                                               <td class="col-4" colspan="1" valign="middle">
+                                                                勤務状態ID
+                                                               </td>
+                                                               <td align="left" class="col-5" colspan="2" valign="middle">	
+                                                                      <input type="text" class="short-input-text">
+                                                               </td>
+                                                        <tr class="iv-search-head-detail"> 
+                                                               <td class="col-1" colspan="1" valign="middle">
+                                                                加班结算区分
+                                                               </td>
+                                                               <td align="left" class="col-2" colspan="2" valign="middle">  
+                                                                     <select class="short-select" selectid="fontType" title="加班结算区分">
+                                                                        <option></option>
+                                                                        <option value="P1">加班费</option>
+                                                                        <option value="P2">调休</option>
+                                                                        <option value="P2">无</option>
+                                                                      </select>  
+                                                               </td>
+                                                               <td class="col-4" colspan="1" valign="middle">
+                                                                弹性工作制
+                                                               </td>
+                                                               <td align="left" class="col-5" colspan="2" valign="middle">  
+                                                                      <select class="short-select" selectid="fontType" title="弹性工作制">
+                                                                        <option></option>
+                                                                        <option value="P1">是</option>
+                                                                        <option value="P2">否</option>
+                                                                      </select>  
+                                                               </td>
+                                                        </tr>
+                                                        <tr class="iv-search-head-buttom">  
+                                                               <th nowrap class="col-1 " colspan="6"><a href="">
+                                                                <img src="./img/common/search.png">
+                                                                <span>检索</span>
+                                                                </a></th>
+                                                        </tr>     
+
+                                            		</table>
+
+													<table  class="taglib-search-iterator">
+															<tbody>
+																				<tr>
+																					<br>
+																						<table class="iv-table">	
+			                                                        <tr class="iv-search-result-title"> 
+			                                                               <th nowrap class="col-1 " colspan="5">检索结果</th>
+			                                                        </tr>																			
+			                                                        <tr class="iv-search-result-head">	
+			                                                               <th nowrap class="col-1">
+			                                                                   全选
+			                                                               </th>
+			                                                               <th nowrap class="col-2 " >勤務状態ID</th>
+			                                                               <th nowrap class="col-3 " >勤務状態名称</th>
+			                                                               <th nowrap class="col-4 " >加班结算区分</th>
+			                                                               <th nowrap class="col-5 " >弹性工作制</th>
+			                                                               
+			                                                        </tr>
+			                                                        <tr class="iv-search-result-detail" onmouseover="this.className = 'iv-search-result-detail iv-search-result-detail-hover';" onmouseout="this.className = 'iv-search-result-detail';"> 
+			                                                               <td class="radio-col-1" colspan="1">
+			                                                                    <input type="checkbox" name="checkbox1" value="">
+			                                                               </td>
+			                                                               <td class="col-2" colspan="1">
+			                                                                    <a href="">ID1</a></th>
+			                                                               </td>
+			                                                               <td class="col-3" colspan="1">
+			                                                                    普通勤务
+			                                                               </td>
+			                                                               <td class="col-4" colspan="1">
+			                                                                    加班费
+			                                                               </td>
+			                                                               <td class="col-5" colspan="1">
+			                                                                    非弹性
+			                                                               </td>
+			                                                                   
+			                                                        </tr>
+			                                                        <tr class="iv-search-result-detail" onmouseover="this.className = 'iv-search-result-detail iv-search-result-detail-hover';" onmouseout="this.className = 'iv-search-result-detail';"> 
+			                                                               <td class="radio-col-1" colspan="1">
+			                                                                    <input type="checkbox" name="checkbox1" value="">
+			                                                               </td>
+			                                                               <td class="col-2" colspan="1">
+			                                                                    <a href="">ID2</a></th>
+			                                                               </td>
+			                                                               <td class="col-3" colspan="1">
+			                                                                    level5以上
+			                                                               </td>
+			                                                               <td class="col-4" colspan="1">
+			                                                                    调休
+			                                                               </td>
+			                                                               <td class="col-5" colspan="1">
+			                                                                    弹性
+			                                                               </td>
+			                                                                    
+			                                                        </tr>
+			                                                        <tr class="iv-search-result-detail" onmouseover="this.className = 'iv-search-result-detail iv-search-result-detail-hover';" onmouseout="this.className = 'iv-search-result-detail';">  
+			                                                               <td class="radio-col-1" colspan="1">
+			                                                                    <input type="checkbox" name="checkbox1" value="">
+			                                                               </td>
+			                                                               <td class="col-2" colspan="1">
+			                                                                    <a href="">ID3</a></th>
+			                                                               </td>
+			                                                               <td class="col-3" colspan="1">
+			                                                                    level6以上
+			                                                               </td>
+			                                                               <td class="col-4" colspan="1">
+			                                                                    无
+			                                                               </td>
+			                                                               <td class="col-5" colspan="1">
+			                                                                    弹性
+			                                                               </td>
+			                                                                     
+			                                                        </tr>
+			                                                       
+			                                                        <tr class="iv-search-result-buttom">
+			                                                            <th nowrap class=""  colspan="5">&nbsp;
+			                                                                <a href="">
+			                                                                <img src="./img/common/add_article.png">
+			                                                                <span>新增记录</span>
+			                                                                </a>
+			                                                            &nbsp;
+			                                                                <a href="">
+			                                                                <img src="./img/common/edit.png">
+			                                                                <span>修改记录</span>
+			                                                                </a>
+			                                                            &nbsp;
+			                                                                <a href="">
+			                                                                <img src="./img/common/delete.png">
+			                                                                <span>批量删除记录</span>
+			                                                                </a>
+			                                                            </th> 
+			                                                        </tr>
+
+			                                        </table>
+													<br>
+													<br>	
+													<table>	
 																				<tbody>
-							                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >	
-						                                                               <td nowrap class="col-1"	 colspan="2">勤務状態ID
+																	<tr class="iv-data-head">
+                                                                        <th nowrap  class="col-1 " colspan="9">勤務状態明细信息</th>
+                                                                        </th>
+                                                                        
+                                                                    </tr>
+
+                                                                    <tr class="iv-data-detail-buttom">
+                                                                        <th nowrap align="right" class="col-9 " colspan="9">&nbsp;&nbsp;<a href=""><img src="./img/common/add_article.png"><span>保存修改</span>&nbsp;&nbsp;<a href=""><img src="./img/common/undo.png"><span>放弃修改</span>
+                                                                        </th>
+                                                                    </tr>
+							                                                        <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >	
+						                                                               <td class="col-1 iv-date-detail-field"	 colspan="2">勤務状態ID
 						                                                               </td>
 						                                                               
-						                                                               <td nowrap class="col-3"	 align="center">JT001
+						                                                               <td class="col-2 iv-date-detail-value"	colspan="2">JT001
 						                                                               </td>
-						                                                               <td nowrap class="col-3"	colspan="6">
+						                                                               <td nowrap class="col-3"	colspan="5">
 							                                                        </tr>
-							                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >
-							                                                           <td nowrap class="col-1"	colspan="2">勤務状態名称
+							                                                        <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >
+							                                                           <td class="col-1 iv-date-detail-field"	colspan="2">勤務状態名称
 						                                                               </td>
-						                                                               <td nowrap class="col-3"	colspan="7"><input type="text" class="long-input-text" value="勤務状態_上海1">
-						                                                               </td>  
+						                                                               <td  class="col-3 iv-date-detail-value"	colspan="2"><input type="text" class="middle-input-text" value="勤務状態_上海1">
+						                                                               </td> 
+						                                                                <td  class="col-3"	colspan="5"> 
 							                                                        </tr>
-							                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >
-						                                                               <td nowrap class="col-1"	colspan="2">加班结算区分
+							                                                        <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >
+						                                                               <td  class="col-1 iv-date-detail-field"	colspan="2">加班结算区分
 						                                                               </td>
-						                                                               <td nowrap class="col-3"	 colspan="7">
+						                                                               <td  class="col-3 iv-date-detail-value"	 colspan="2">
 							                                                               <input type="radio" name="ot"  >加班费
 							                                                               <input type="radio" name="ot">调休
 							                                                               <input type="radio" name="ot">无
 							                                                           </td>
+							                                                           <td  class="col-3"	colspan="5"> 
 							                                                        </tr>
-							                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >
-						                                                               <td nowrap class="col-1" colspan="2">弹性工作制
+							                                                        <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >
+						                                                               <td  class="col-1 iv-date-detail-field" colspan="2">弹性工作制
 						                                                               </td>
 						                                                               
-						                                                               <td nowrap class="col-3"	colspan="7" >
+						                                                               <td  class="col-3 iv-date-detail-value"	colspan="2" >
 						                                                               	<input type="radio" name="flexible">弹性
 						                                                               	<input type="radio" name="flexible">非弹性
 						                                                               </td>
+						                                                               <td  class="col-3"	colspan="5">
 							                                                        </tr>
-							                                                         <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >	
-						                                                               <td nowrap class="col-1"	 colspan="2">正常出勤时间
+							                                                         <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >
+						                                                               <td  class="col-1 iv-date-detail-field"	 colspan="2">正常出勤时间
 						                                                               </td>
-						                                                               <td nowrap class="col-3"	 colspan="7">
+						                                                               <td  class="col-3 iv-date-detail-value"	 colspan="4">
 						                                                               		<input type="text" class="short-input-text" value="7.5">小时
 						                                                               </td>
+						                                                               <td  class="col-3"	colspan="3">
 							                                                        </tr>
-							                                                         <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >	
-						                                                               <td nowrap class="col-1"	 colspan="2">正常出勤期间
+							                                                         <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >	
+						                                                               <td  class="col-1 iv-date-detail-field"	 colspan="2">正常出勤期间
 						                                                               </td>
-						                                                               <td nowrap class="col-3"	 colspan="7">
+						                                                               <td  class="col-3 iv-date-detail-value"	 colspan="4">
 						                                                               			<input type="text" class="short-input-text" value="9:00" >  ~~
 						                                                               			<input type="text" value="17:30" class="short-input-text">
 						                                                               </td>
+						                                                               <td  class="col-3"	colspan="3">
 						                                                              </tr>
-							                                                         <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >	
-						                                                               <td nowrap class="col-1"	 colspan="2">午休期间
+
+							                                                         <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >	
+						                                                               <td  class="col-1 iv-date-detail-field"	 colspan="2">午休期间
 						                                                               </td>
-						                                                               <td nowrap class="col-3"	colspan="7">
+						                                                               <td  class="col-3 iv-date-detail-value"	colspan="4">
 						                                                               			<input type="text" value="12:00" class="short-input-text">
 						                                                               			~~
 						                                                               			<input type="text" value="13:00" class="short-input-text" >
 						                                                               </td>
+						                                                               <td  class="col-3"	colspan="3">
 							                                                        </tr>
-							                                                         <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >	
-							                                                         <td nowrap class="col-1" colspan="2">
-						                                                               </td>
-							                                                         </td>
-
-						                                                               <td nowrap class="col-2"	align="left" valign="middle" colspan="7">月加班超过<input type="text" class="short-input-text" value="40">小时后提醒审批人员
+							                                                         <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >	
+							                                                      
+						                                                               <td  class="col-2 iv-date-detail-value"	 v colspan="9">月加班超过<input type="text" class="mini-input-text" value="40">小时后提醒审批人员
 						                                                               </td>
 						                                                               
 							                                                        </tr>
-							                                                         <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >	
-						                                                               <td nowrap class="col-1"	 colspan="2">法定年假赋予规则
+							                                                         <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >	
+						                                                               <td  class="col-1 iv-date-detail-field"	 colspan="2">法定年假赋予规则
 						                                                               </td>
-						                                                               <td nowrap class="col-5"	colspan="3" align="center">
+						                                                               <td  class="col-5 iv-date-detail-field"	colspan="3" >
 						                                                               社会工龄
 						                                                               </td>
-						                                                               <td nowrap class="col-8"	colspan="4" align="center">
+						                                                               <td class="col-8 iv-date-detail-field"	colspan="3" >
 						                                                               法定年假天数
 						                                                               </td>
-						                                                               
+						                                                               <td class="col-1 iv-date-detail-field" colspan="1">
+						                                                               </td>
+							                                                         </td>
 							                                                        </tr>
-							                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >
-						                                                               <td nowrap class="col-1"	align="left" valign="middle" colspan="2">
+							                                                      
+							                                                        <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >
+						                                                               <td  class="col-1"	 v colspan="2">
 						                                                               </td>
-						                                                               <td nowrap class="col-3"	colspan="1" ><input type="text" class="short-input-text">
+						                                                               <td style="width:180px;" class="col-6"	colspan="3" ><input type="text" class="mini-input-text">~~<input type="text" class="mini-input-text">
 						                                                               </td>
-						                                                               <td nowrap class="col-4"	colspan="1" >~~
 						                                                               </td>
-						                                                               <td nowrap class="col-5"	colspan="1" ><input type="text" class="short-input-text">
+						                                                               <td  style="width:180px;" class="col-6"	colspan="3" ><input type="text" class="mini-input-text">~~<input type="text" class="mini-input-text">
 						                                                               </td>
-						                                                               <td nowrap class="col-6"	colspan="1" ><input type="text" class="short-input-text">
+						                                                               <td  class="col-9"	colspan="1" >
+						                                                               <img src="./img/common/delete.png">
 						                                                               </td>
-						                                                               <td nowrap class="col-7"	colspan="1" >~~
-						                                                               </td>
-						                                                               <td nowrap class="col-8"	colspan="1" ><input type="text" class="short-input-text">
+						                                                             
+							                                                        </tr>
+							                                                        
+							                                                        <tr class="iv-data-detail"  onmouseover="this.className = 'iv-data-detail-hover iv-data-detail';" onmouseout="this.className = 'iv-data-detail';"  >
+						                                                               <td nowrap class="col-1"	 v colspan="2">
 						                                                               </td>
 						                                                               <td nowrap class="col-9"	colspan="1" >
-						                                                               <img src="./img/common/close.png">
+						                                                               <a href="">
+                                                                                      <img src="./img/common/add_article.png">
+                                                                                      <span>添加</span>
+                                                                                    </a>
 						                                                               </td>
-						                                                             
+						                                                               <td  class="col-1" colspan="6">
 							                                                        </tr>
-							                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >
-						                                                               <td nowrap class="col-1"	align="left" valign="middle" colspan="2">
-						                                                               </td>
-						                                                               <td nowrap class="col-3"	colspan="1" ><input type="text" class="short-input-text">
-						                                                               </td>
-						                                                               <td nowrap class="col-4"	colspan="1" >~~
-						                                                               </td>
-						                                                               <td nowrap class="col-5"	colspan="1" ><input type="text" class="short-input-text">
-						                                                               </td>
-						                                                               <td nowrap class="col-6"	colspan="1" ><input type="text" class="short-input-text">
-						                                                               </td>
-						                                                               <td nowrap class="col-7"	colspan="1" >~~
-						                                                               </td>
-						                                                               <td nowrap class="col-8"	colspan="1" ><input type="text" class="short-input-text">
-						                                                               </td>
-						                                                               <td nowrap class="col-9"	colspan="1" >
-						                                                               <img src="./img/common/close.png">
-						                                                               </td>
-						                                                             
-							                                                        </tr>
-							                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >
-						                                                               <td nowrap class="col-1"	align="left" valign="middle" colspan="2">
-						                                                               </td>
-						                                                               <td nowrap class="col-3"	colspan="1" ><input type="text" class="short-input-text">
-						                                                               </td>
-						                                                               <td nowrap class="col-4"	colspan="1" >~~
-						                                                               </td>
-						                                                               <td nowrap class="col-5"	colspan="1" ><input type="text" class="short-input-text">
-						                                                               </td>
-						                                                               <td nowrap class="col-6"	colspan="1" ><input type="text" class="short-input-text">
-						                                                               </td>
-						                                                               <td nowrap class="col-7"	colspan="1" >~~
-						                                                               </td>
-						                                                               <td nowrap class="col-8"	colspan="1" ><input type="text" class="short-input-text">
-						                                                               </td>
-						                                                               <td nowrap class="col-9"	colspan="1" >
-						                                                               <img src="./img/common/close.png">
-						                                                               </td>
-						                                                             
-							                                                        </tr>
-							                                                        <tr class="portlet-section-body results-row"  onmouseover="this.className = 'portlet-section-body-hover results-row hover';" onmouseout="this.className = 'portlet-section-body results-row';"  >
-						                                                               <td nowrap class="col-1"	align="left" valign="middle" colspan="2">
-						                                                               </td>
-						                                                               <td nowrap class="col-9"	colspan="7" >
-						                                                               <img src="./img/common/add.png">
-						                                                               </td>
-						                                                             
-							                                                        </tr>
+							                                                        <tr class="iv-data-detail-buttom">  
+								                                                               <th nowrap class="col-1 " colspan="9"  >
+                                                                                    <a href="">
+                                                                                      <img src="./img/common/add_article.png">
+                                                                                      <span>保存修改</span>
+                                                                                    </a>
+                                                                                  &nbsp;
+                                                                                    <a href="">
+                                                                                      <img src="./img/common/undo.png">
+                                                                                      <span>放弃修改</span>
+                                                                                    </a>
+                                                            
+                                                                                </th>
+								                                                    </tr>
 							                                                       
 
 																				</tbody>
-																			</table>	
-																			<table class="taglib-search-iterator"> 
-								                                                    <tr class="portlet-section-header results-header">  
-								                                                               <th nowrap class="col-1 "  > 保存</th>
-								                                                               <th nowrap class="col-3 "  > 返回</th>
-								                                                    </tr>
-                                                 							</table>
+													</table>	
+															
 
-																		</td>
-																	</tr>
-												</tbody>
-											</table>
 							</form>
 						</div>
 					</div>	
