@@ -387,7 +387,7 @@
                                                                                     </a>
                                                                </td>
                                                         </tr>
-                                                        <tr class="iv-search-result-detail alert" onmouseover="this.className = 'iv-search-result-detail ';" onmouseout="this.className = 'iv-search-result-detail alert';">  
+                                                        <tr class="iv-search-result-detail alert" onmouseover="this.className = 'iv-search-result-detail alert-hover';" onmouseout="this.className = 'iv-search-result-detail alert';">  
                                                                <td align="middle" class="col-1" colspan="1">
                                                                     <input type="checkbox" name="checkbox1" value="checkbox">
                                                                </td>
@@ -440,7 +440,7 @@
                                                                                     </a>
                                                                </td>
                                                         </tr>
-                                                        <tr class="iv-search-result-detail alert" onmouseover="this.className = 'iv-search-result-detail ';" onmouseout="this.className = 'iv-search-result-detail alert';">  
+                                                        <tr class="iv-search-result-detail alert" onmouseover="this.className = 'iv-search-result-detail alert-hover';" onmouseout="this.className = 'iv-search-result-detail alert';">  
                                                                <td align="middle" class="col-1" colspan="1">
                                                                     <input type="checkbox" name="checkbox1" value="checkbox">
                                                                </td>
@@ -493,7 +493,7 @@
                                                                                     </a>
                                                                </td>
                                                         </tr>
-                                                        <tr class="iv-search-result-detail alert" onmouseover="this.className = 'iv-search-result-detail ';" onmouseout="this.className = 'iv-search-result-detail alert';">  
+                                                        <tr class="iv-search-result-detail alert" onmouseover="this.className = 'iv-search-result-detail alert-hover';" onmouseout="this.className = 'iv-search-result-detail alert';">  
                                                                <td align="middle" class="col-1" colspan="1">
                                                                     <input type="checkbox" name="checkbox1" value="checkbox">
                                                                </td>
@@ -625,7 +625,21 @@
                                                       <td  class="col-1 iv-date-detail-field" colspan="13">
                                                       <a href="javascript:void(0);" onclick="" title="前月へ">
                                                       <img src="img/schedule/schedule_prevmonth.gif" border="0" alt="前月へ"></a>&nbsp;<span>
-                                                        <input class="time-input-text" id="monthpicker2" value="2013/09" />
+                                                                      <select class="year-select" selectid="fontType" title="年份">
+                                                                        <option value="0" selected>2013</option>
+                                                                        <option value="1">2014</option>
+                                                  
+                                                                      </select>
+                                                                      <select class="month-select" selectid="fontType" title="月份">
+                                                                        <option value="0" selected>1</option>
+                                                                        <option value="1">2</option>
+                                                                        <option value="1">3</option>
+                                                                        <option value="1">4</option>
+                                                                        <option value="1">5</option>
+                                                                        <option value="1">6</option>
+
+                                                  
+                                                                      </select>
                                                       </span>
                                                       <a href="javascript:void(0);" onclick="" title="翌月へ">
                                                       <img src="img/schedule/schedule_nextmonth.gif" border="0" alt="翌月へ"></a>

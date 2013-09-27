@@ -1,6 +1,6 @@
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" >
 <head>	
-<title>特别休假設定</title>	
+<title>特殊考勤时间设定</title>	
 <meta http-equiv="X-UA-Compatible" content="IE=8">
 
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
@@ -36,7 +36,7 @@
 		 <div class="portlet-boundary  portlet-communities"><a id="p_88"></a>
 			<div class="portlet" >	
 				<div class="portlet-topper">	
-					<span class="portlet-title" style="cursor: move;">	<span><img class="icon" src="./img/common/configuration.png" alt="主数据管理" title="主数据管理" style="background-image: url('/html/icons/.sprite.png'); background-position: 50% -272px; background-repeat: no-repeat; height: 16px; width: 16px;"></span>主数据管理>>休假设定</span>	
+					<span class="portlet-title" style="cursor: move;">	<span><img class="icon" src="./img/common/configuration.png" alt="主数据管理" title="主数据管理" style="background-image: url('/html/icons/.sprite.png'); background-position: 50% -272px; background-repeat: no-repeat; height: 16px; width: 16px;"></span>主数据管理>>特殊考勤时间设定</span>	
 			 	</div>
         <div class="portlet-head">
                               <div class="portlet-menu">
@@ -236,7 +236,7 @@
                        <br>
 											 <table id="detailtable" class="taglib-search-iterator "> 
                                                                     <tr class="iv-data-head">
-                                                                        <th nowrap  class="col-1 " colspan="9">休假设定明细信息</th>
+                                                                        <th nowrap  class="col-1 " colspan="9">特殊考勤时间设定明细信息</th>
                                                                         </th>
                                                                         
                                                                     </tr>
@@ -277,14 +277,24 @@
                                                                      <tr class="iv-data-detail">
                                                                         <td class="col-1 iv-date-detail-field" colspan="1">
                                                                         </td>
-                                                                        <td class="col-5 iv-date-detail-left-value" colspan="4">
+                                                                        <td class="col-5 iv-date-detail-left-value" colspan="8">
                                                                         	<input type="radio" name="ot">&nbsp;
-                                                                        
-                                                                          <input type="text" class="time-input-text"  >&nbsp;&nbsp;半休&nbsp;&nbsp;（9:00-12:00 或 13:00-17:30）
+                                                                          <select class="extra-long-select">
+                                                                            <option>
+                                                                              半休&nbsp;&nbsp;（9:00-12:00 或 13:00-17:30）
+                                                                            </option>
+                                                                            <option>
+                                                                              时间段
+                                                                            </option>
+                                                                          </select>
+
+                                                                          <input type="text" class="time-input-text"  >&nbsp;&nbsp;~~<input type="text" class="time-input-text"  >
                                                                         </td>
-                                                                        <td colspan="4">
+                                                                        <!--
+                                                                        <td colspan="3">
                                                                         	
                                                                         </td>
+                                                                        -->
                                                                     </tr>
                                                                     <tr class="iv-data-detail">
                                                                         

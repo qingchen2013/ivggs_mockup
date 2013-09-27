@@ -276,6 +276,10 @@
           .iv-date-detail-left-value{
             text-align: left;
           }
+          .iv-date-detail-sub-left-field{
+            text-align: left;
+            padding: 0.3em 1em;
+          }
 
           .iv-data-detail-buttom {
 
@@ -416,7 +420,10 @@
           vertical-align: middle;
         }
 
-
+        .extra-long-select{
+            width: 240px;
+            text-align: center;
+          }
         .long-select{
             width: 200px;
             text-align: center;
@@ -567,11 +574,18 @@
         
         }
         .alert{
-            background : #DC143C ;
+            background : #CC0000 ;
             color: white;
+            filter:alpha(opacity=80); 
+            -moz-opacity:0.8; 
+            opacity:0.8;
           }
           .alert-hover{
-            background : #FFB6C1 ;
+            background : #0081C2 ;
+            color: white;
+          }
+          .alert-hover a{
+            
             color: white;
           }
         .alert span{

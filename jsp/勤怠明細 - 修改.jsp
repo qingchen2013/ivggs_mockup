@@ -123,7 +123,9 @@
                                                        
                                                         <tr class="iv-search-result-detail" onmouseover="this.className = 'iv-search-result-detail iv-search-result-detail-hover';" onmouseout="this.className = 'iv-search-result-detail';"> 
                                                                <td align="middle" class="col-1">
-                                                                  <label for="squaredFour"></label>
+                                                                  
+                                                                  <input type="checkbox" name="checkbox1" value="">
+                                                         
                                                                </td>
                                                                <td align="middle" class="col-1 iv-date-detail-center-value" colspan="1">
                                                                    <input type="text" class="short-input-text" value="9:00">  
@@ -132,7 +134,7 @@
                                                                <td align="middle" class="col-2 iv-date-detail-center-value" colspan="1" valign="middle">  
                                                                      <input type="text" class="short-input-text" value="10:30"> 
                                                                </td>
-                                                               <td align="middle" class="col-3 " colspan="1" valign="middle">
+                                                               <td align="middle" class="col-3 width='20px" colspan="1" valign="middle">
                                                                     1.5
                                                                </td>
                                                                <td align="middle" class="col-4 iv-date-detail-center-value" colspan="1" valign="middle">
@@ -157,7 +159,7 @@
                                                                       </select>
                                                                </td>
                                                                <td align="middle" class="col-7 iv-date-detail-center-value" colspan="1" valign="middle">
-                                                                      <select class="long-select" selectid="fontType" title="项目">
+                                                                      <select class="short-select" selectid="fontType" title="项目">
                                                                         <option value="P1" selected>非稼动</option>
                                                                         <option value="P2">部门业务</option>
                                                                         <option value="P3">MCG</option>
@@ -186,7 +188,7 @@
                                                                <td align="middle" class="col-2" colspan="1" valign="middle">  
                                                                      <input type="text" class="short-input-text" value="17:30"> 
                                                                </td>
-                                                               <td align="middle" class="col-3" colspan="1" valign="middle">
+                                                               <td align="middle" class="col-3 width='20px" colspan="1" valign="middle">
                                                                     6 
                                                                </td>
                                                                <td align="middle" class="col-4" colspan="1" valign="middle">
@@ -211,7 +213,7 @@
                                                                       </select>
                                                                </td>
                                                                <td align="middle" class="col-7" colspan="1" valign="middle">
-                                                                      <select class="long-select" selectid="fontType" title="项目">
+                                                                      <select class="short-select" selectid="fontType" title="项目">
                                                                         <option value="P1" selected>非稼动</option>
                                                                         <option value="P2">部门业务</option>
                                                                         <option value="P3">MCG</option>
@@ -231,7 +233,7 @@
                                                                <td align="middle" class="col-1">
                                                                   <input type="checkbox" name="checkbox1" value="">
                                                                </td>
-                                                               <td align="middle" class="col-2" colspan="1">
+                                                               <td align="middle" class="col-2 width='20px' " colspan="1">
                                                                    18：00  
                                                                </td>
 
@@ -263,7 +265,7 @@
                                                                       </select>
                                                                </td>
                                                                <td align="middle" class="col-8" colspan="1" valign="middle">
-                                                                      <select class="long-select" selectid="fontType" title="项目">
+                                                                      <select class="short-select" selectid="fontType" title="项目">
                                                                         <option value="P1" selected>非稼动</option>
                                                                         <option value="P2">部门业务</option>
                                                                         <option value="P3">MCG</option>
